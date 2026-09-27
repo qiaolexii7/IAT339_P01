@@ -216,7 +216,6 @@ to match your perfect level of sweetness and ice.
         <h3>Product/Service Listing</h3>
 
         <h4>Rendered element:</h4>
-
     
         <div>
           <img scr>
@@ -235,7 +234,26 @@ to match your perfect level of sweetness and ice.
 
         <form>
           <div>
-            <p>Payment Method<p>
+            <h3>Pickup Details</h3>
+
+            <h4>Schedule Pickup</h4>
+            <input type="radio" name="schedule-pickup" value="" checked>
+            <label for="schedule-pickup">Schedule</label>
+
+            <h4>Date & Time</h4>
+            <input type="date" id="pickup-date" name="pickup-date" required><br>
+            <!--
+            The pickup time should probably be 15 mins apart but I think we can only achieve that in JavaScript lol
+            -->
+            <input type="time" id="pickup-time" name="pickup-time" required>
+            
+            <h4>Pickup Method</h4>
+            <input type="radio" name="pickup-method" value="" checked>
+            <label for="pickup-method">In-Store</label>
+          </div>
+
+          <div>
+            <h4>Payment Method</h4>
 
             <input type="radio" id="apple-pay" name="payment-method" value="ApplePay">
             <label for="apple-pay">Apple Pay</label><br>
@@ -248,7 +266,7 @@ to match your perfect level of sweetness and ice.
           </div>
 
           <div id="payment-information">
-            <p>Payment Information</p>
+            <h4>Payment Information</h4>
 
             <label for="card-name">Cardholder Name</label>
             <input type="text" id="card-name" required><br>
@@ -285,16 +303,10 @@ to match your perfect level of sweetness and ice.
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <!-- // BRANDING IDEA SECTION -->
-     <section>
-
-     </section>
     <!-- // BRANDING IDEA SECTION -->
 
     <!-- // BRAND COMPONENTS SECTION -->
-     <section>
-
-     </section>
-     <!-- // BRAND COMPONENTS SECTION -->
+    <!-- // BRAND COMPONENTS SECTION -->
 
 
 
