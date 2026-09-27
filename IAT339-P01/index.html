@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - QQ Tea Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - QQ Tea Style Guide</h1>
+
+      <p>A style guide for QQ Tea, a fictional online bubble tea shop</p>
+
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;p&gt;
+  Craving something new? Explore our
+  &lt;a href="#seasonal"&gt;seasonal tea collection&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+
+        <h4>Rendered element:</h4>
+        <p>
+          Craving something new? Explore our
+          <a href="#seasonal">seasonal tea collection</a>
+        </p>
+      </section>
+
+
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <pre><code>&lt;a href="#" class="button-nav"&gt;Menu&lt;/a&gt;</code></pre>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Menu</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <!--type="submit" and type="reset" required later-->
+        <h4>Sample code:</h4>
+        <pre><code>&lt;button type="submit"&gt;Add to Cart&lt;/button&gt;
+&lt;button type="reset"&gt;Start Over&lt;/button&gt;</code></pre>
+
+        <h4>Rendered element:</h4>
+
+        <button type="submit">Add to Cart</button>
+        <button type="reset">Start Over</button>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
+&lt;input type="text" id="cup-name" placeholder="Your name"&gt;</code></pre>
+      
+        <h4>Rendered element:</h4>
+
+        <label for="cup-name">Name for your cup:</label>
+        <input type="text" id="cup-name" placeholder="Your name">
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;input type="radio" id="half-sweet" value="50"&gt;
+&lt;label for="half-sweet"&gt;50% Sweet&lt;/label&gt;</code></pre>
+
+        <h4>Rendered element:</h4>
+
+        <input type="radio" id="half-sweet" value="50">
+        <label for="half-sweet">50% Sweet</label>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <!--wait idk if we should have a page for like a single product and having the image link to that page ;-; wdyt-->
+        <h4>Sample code:</h4>
+        <pre><code>&lt;a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"&gt;
+  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea"&gt;
+&lt;/a&gt;</code></pre>
+
+      <h4>Rendered element:</h4>
+
+      <a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/">
+        <img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea">
+      </a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;h1&gt;QQ Tea&lt;/h1&gt;
+&lt;h2&gt;Seasonal&lt;/h2&gt;
+&lt;h3&gt;Brown Sugar Milk Tea&lt;/h3&gt;
+&lt;h4&gt;Choose Your Sweetness&lt;/h4&gt;</code></pre>
+
+  <h4>Rendered element:</h4>
+
+  <h1>QQ Tea</h1>
+  <h2>Seasonal</h2>
+  <h3>Brown Sugar Milk Tea</h3>
+  <h4>Choose Your Sweetness</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;p&gt;
+QQ Tea makes playful drinks with freshly brewed tea,
+fruit, milk, and chewy toppings! Every cup can be customized
+to match your perfect level of sweetness and ice.
+&lt;/p&gt;</pre></code>
+
+  <h4>Rendered element:</h4>
+
+  <p>
+    QQ Tea makes playful drinks with freshly brewed tea,
+    fruit, milk, and chewy toppings! Every cup can be customized
+    to match your perfect level of sweetness and ice.
+  </p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;ol&gt;
+&lt;li&gt;Pick your drink&lt;/li&gt;
+&lt;li&gt;Choose sweetness and ice&lt;/li&gt;
+&lt;li&gt;Choose toppings&lt;/li&gt;
+&lt;li&gt;Please enjoy:)&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+  <h4>Rendered element:</h4>
+
+  <ol>
+    <li>Pick your drink</li>
+    <li>Choose sweetness and ice</li>
+    <li>Choose toppings</li>
+    <li>Please enjoy:)</li>
+  </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
