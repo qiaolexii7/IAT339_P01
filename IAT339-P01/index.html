@@ -214,14 +214,24 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>Product/Service Listing</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;div&gt;
+  &lt;img src="image/product-example.jpg" alt="Brown sugar milk tea"&gt;
+  &lt;h3&gt;Brown Sugar QQ Tea&lt;/h3&gt;
+  &lt;h4&gt;$6.70&lt;/h4&gt;
+  &lt;p&gt;Brown Sugar Pearl Milk Tea&lt;/p&gt;
+  &lt;a href="brown-sugar-milk-tea.html"&gt;View Details&lt;/a&gt;
+  &lt;button type="button"&gt;Add to cart&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 
         <h4>Rendered element:</h4>
     
         <div>
-          <img scr>
-          <h4>Brown Sugar Milk Tea</h4>
-          <p>$6.70</p>
-          <a href="product.html">View Details</a><br>
+          <img src="image/product-example.jpg" alt="Brown sugar milk tea">
+          <h3>Brown Sugar QQ Tea</h3>
+          <h4>$6.70</h4>
+          <p>Brown Sugar Pearl Milk Tea</p>
+          <a href="brown-sugar-milk-tea.html">View Details</a>
           <button type="button">Add to cart</button>
         </div>
 
@@ -229,6 +239,11 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>Payment Form</h3>
+        <h4>Sample code:</h4>
+        <pre><code>
+
+
+        </code></pre>
         
         <h4>Rendered element:</h4>
 
@@ -245,9 +260,6 @@ to match your perfect level of sweetness and ice.
 
             <h4>Date & Time</h4>
             <input type="date" id="pickup-date" name="pickup-date" required><br>
-            <!--
-            The pickup time should probably be 15 mins apart but I think we can only achieve that in JavaScript lol
-            -->
             <input type="time" id="pickup-time" name="pickup-time" required>
             
             <h4>Pickup Method</h4>
@@ -258,13 +270,13 @@ to match your perfect level of sweetness and ice.
           <div>
             <h4>Payment Method</h4>
 
-            <input type="radio" id="apple-pay" name="payment-method" value="ApplePay">
+            <input type="radio" id="apple-pay" name="payment-method" value="">
             <label for="apple-pay">Apple Pay</label><br>
 
-            <input type="radio" id="google-pay" name="payment-method" value="GooglePay">
+            <input type="radio" id="google-pay" name="payment-method" value="">
             <label for="google-pay">Google Pay</label><br>
 
-            <input type="radio" id="card" name="payment-method" value="Card">
+            <input type="radio" id="card" name="payment-method" value=" ">
             <label for="card">Add a new payment method</label>
           </div>
 
@@ -285,7 +297,7 @@ to match your perfect level of sweetness and ice.
           </div>
 
           <button type="submit">Place Order</button>
-
+          
         </form>         
       </section>
 
