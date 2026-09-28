@@ -227,7 +227,7 @@ to match your perfect level of sweetness and ice.
         <h4>Rendered element:</h4>
     
         <div>
-          <img src="image/product-example.jpg" alt="Brown sugar milk tea">
+          <img src="image/product-example.jpg" alt="Brown sugar pearl milk tea">
           <h3>Brown Sugar QQ Tea</h3>
           <h4>$6.70</h4>
           <p>Brown Sugar Pearl Milk Tea</p>
@@ -240,17 +240,52 @@ to match your perfect level of sweetness and ice.
       <section class="element">
         <h3>Payment Form</h3>
         <h4>Sample code:</h4>
-        <pre><code>
+        <pre><code>&lt;form&gt;
+  &lt;div&gt;
+    &lt;h3&gt;Pickup Details&lt;/h3&gt;
+    &lt;h4&gt;Schedule Pickup&lt;/h4&gt;
+    &lt;input type="radio" id="asap" name="schedule-pickup" value="" checked&gt;
+    &lt;label for="schedule-pickup"&gt;ASAP&lt;/label&gt;
+    &lt;input type="radio" id="schedule" name="schedule-pickup" value=""&gt;
+    &lt;label for="schedule-pickup"&gt;Schedule&lt;/label&gt;
+    &lt;h4&gt;Date & Time&lt;/h4&gt;
+    &lt;input type="date" id="pickup-date" name="pickup-date" required&gt;&lt;br&gt;
+    &lt;input type="time" id="pickup-time" name="pickup-time" required&gt;
+    &lt;h4&gt;Pickup Method&lt;/h4&gt;
+    &lt;input type="radio" name="pickup-method" value="" checked&gt;
+    &lt;label for="pickup-method"&gt;In-Store&lt;/label&gt;
+  &lt;/div&gt;
 
+  &lt;div&gt;
+    &lt;h4&gt;Payment Method&lt;/h4&gt;
+    &lt;input type="radio" id="apple-pay" name="payment-method" value=""&gt;
+    &lt;label for="apple-pay"&gt;Apple Pay&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" id="google-pay" name="payment-method" value=""&gt;
+    &lt;label for="google-pay"&gt;Google Pay&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" id="card" name="payment-method" value=""&gt;
+    &lt;label for="card"&gt;Add a new payment method&lt;/label&gt;
+  &lt;/div&gt;
 
-        </code></pre>
+  &lt;div&gt;
+    &lt;h4&gt;Payment Information&lt;/h4&gt;
+    &lt;label for="card-name"&gt;Cardholder Name&lt;/label&gt;
+    &lt;input type="text" id="card-name" required&gt;&lt;br&gt;
+    &lt;label for="card-number"&gt;Card Number&lt;/label&gt;
+    &lt;input type="text" id="card-number" placeholder="1234 4567 9012 3456" required&gt;&lt;br&gt;
+    &lt;label for="expiration"&gt;Expiration Date&lt;/label&gt;
+    &lt;input type="text" id="expiration" placeholder="MM/YY" required&gt;&lt;br&gt; 
+    &lt;label for="cvv"&gt;Security Code&lt;/label&gt;
+    &lt;input type="text" id="cvv" placeholder="CVV" required&gt;
+  &lt;/div&gt;
+
+  &lt;button type="submit"&gt;Place Order&lt;/button&gt;
+&lt;/form&gt;</code></pre>
         
         <h4>Rendered element:</h4>
 
         <form>
           <div>
             <h3>Pickup Details</h3>
-
             <h4>Schedule Pickup</h4>
             <input type="radio" id="asap" name="schedule-pickup" value="" checked>
             <label for="schedule-pickup">ASAP</label>
@@ -269,20 +304,18 @@ to match your perfect level of sweetness and ice.
 
           <div>
             <h4>Payment Method</h4>
-
             <input type="radio" id="apple-pay" name="payment-method" value="">
             <label for="apple-pay">Apple Pay</label><br>
 
             <input type="radio" id="google-pay" name="payment-method" value="">
             <label for="google-pay">Google Pay</label><br>
 
-            <input type="radio" id="card" name="payment-method" value=" ">
+            <input type="radio" id="card" name="payment-method" value="">
             <label for="card">Add a new payment method</label>
           </div>
 
-          <div id="payment-information">
+          <div>
             <h4>Payment Information</h4>
-
             <label for="card-name">Cardholder Name</label>
             <input type="text" id="card-name" required><br>
 
@@ -303,23 +336,100 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>Checkout Cart</h3>
+        <h4>Sample code:</h4>
+        <pre><code>&lt;div&gt;
+  &lt;h2&gt;Cart Details&lt;/h2&gt;
+  &lt;div class="cart-item"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Brown Sugar QQ Tea&lt;/h3&gt;
+      &lt;h4&gt;$6.70&lt;/h4&gt;
+      &lt;p&gt;100% Sugar&lt;/p&gt;
+      &lt;p&gt;No Ice&lt;/p&gt;
+      &lt;label for="quantity"&gt;Quantity&lt;/label&gt;
+      &lt;input type="number" id="quantity-brown-sugar" value="1" min="1"&gt;
+    &lt;/div&gt;
+    &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class="cart-item"&gt;
+    &lt;div&gt;
+      &lt;h3&gt;Osmanthus Lychee Lemonade&lt;/h3&gt;
+      &lt;h4&gt;$6.90&lt;/h4&gt;
+      &lt;p&gt;50% Sugar&lt;/p&gt;
+      &lt;p&gt;Less Ice&lt;/p&gt;
+      &lt;label for="quantity"&gt;Quantity&lt;/label&gt;
+      &lt;input type="number" id="quantity-lychee" value="1" min="1"&gt;
+    &lt;/div&gt;
+    &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class="cart-total"&gt;
+    &lt;h4&gt;Total&lt;/h4&gt;
+    &lt;h4&gt;$13.60&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;button type="submit"&gt;Proceed to Checkout&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 
         <h4>Rendered element:</h4>
 
         <div>
-          <h4>Cart Details</h4>
+          <h2>Cart Details</h2>
+
+          <div class="cart-item">
+            <div>
+              <h3>Brown Sugar QQ Tea</h3>
+              <h4>$6.70</h4>
+              <p>100% Sugar</p>
+              <p>No Ice</p>
+
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity-brown-sugar" value="1" min="1">
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+
+          <div class="cart-item">
+            <div>
+              <h3>Osmanthus Lychee Lemonade</h3>
+              <h4>$6.90</h4>
+              <p>50% Sugar</p>
+              <p>Less Ice</p>
+
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity-lychee" value="1" min="1">
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+          
+          <div class="cart-total">
+            <h4>Total</h4>
+            <h4>$13.60</h4>
+          </div>
           <button type="submit">Proceed to Checkout</button>
         </div>
 
       </section>
-
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <!-- // BRANDING IDEA SECTION -->
+    <section id="branding_idea">
+      <h2>Branding Idea</h2>
+
+      <section class="element">
+
+      </section>
+    </section>
     <!-- // BRANDING IDEA SECTION -->
 
     <!-- // BRAND COMPONENTS SECTION -->
+    <section id="brand_components">
+      <h2>Brand Components</h2>
+
+      <section class="element">
+
+      </section>
+    </section>
     <!-- // BRAND COMPONENTS SECTION -->
 
 
