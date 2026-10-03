@@ -2,6 +2,26 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+/* 
+  LOCAL FONTS
+*/
+@font-face {
+  font-family: "Ligema";
+  src: url(/IAT339-P01/fonts/ligema/Ligema\ DEMO.otf);
+}
+@font-face {
+  font-family: "Nanum Pen";
+  src: url(/IAT339-P01/fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("/IAT339-P01/fonts/LINE_Seed_JP/LINESeedJP-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
 body {
   font-family: sans-serif;
   padding: 2rem;
@@ -31,16 +51,16 @@ p {
   margin-top: 0;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
 code {
-  background-color: #EEE;
+  background-color: #eee;
   padding: 0.5rem;
   display: block;
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -51,25 +71,86 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: rgb(50, 50, 50);
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+.button-nav:hover,
+.button-nav:focus {
+  background-color: rgb(200, 200, 200);
 }
-
-
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
-
-
-
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+.checkout-form {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  background-color: F0EDED;
+  border: 0.1rem solid #f0eded;
+  border-radius: 1.25rem;
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  gap: 0.5rem;
+  min-width: 7rem;
+
+  color: black;
+  background-color: white;
+
+  border: 0.1rem solid #f0eded;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.radio-option:has(input:checked) {
+  border: 0.1rem solid #c5850f;
+  background-color: #ffd683;
+}
+.radio-option input[type="radio"]:checked {
+  accent-color: #c5850f;
+}
+
+.cart {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  background-color: F0EDED;
+  border: 0.1rem solid #f0eded;
+  border-radius: 1.25rem;
+}
+
+/*
+  FONTS
+*/
+.font {
+  margin-bottom: 2rem;
+}
+#ligema {
+  font-family: "Ligema", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+#nanum {
+  font-family: "Nanum Pen", cursive;
+  font-size: 2.75rem;
+  margin-bottom: 0;
+}
+#line-seed {
+  font-family: "LINE Seed JP";
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}

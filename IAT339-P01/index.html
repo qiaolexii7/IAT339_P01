@@ -7,7 +7,6 @@
     <title>P01 - QQ Tea Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -287,26 +286,33 @@ to match your perfect level of sweetness and ice.
         
         <h4>Rendered element:</h4>
 
-        <form>
-          <div>
+        <form class="checkout-form">
+          <div class="pickup-section">
             <h3>Pickup Details</h3>
             <h4>Schedule Pickup</h4>
-            <input type="radio" id="asap" name="schedule-pickup" value="" checked>
-            <label for="schedule-pickup">ASAP</label>
+            <label class="radio-option">
+              <input type="radio" id="asap" name="schedule-pickup" value="" checked>
+              <span>ASAP</span>
+            </label>
 
-            <input type="radio" id="schedule" name="schedule-pickup" value="">
-            <label for="schedule-pickup">Schedule</label>
+            <label class="radio-option">
+              <input type="radio" id="schedule" name="schedule-pickup" value="">
+              <span>Schedule</span>
+            </label>
 
             <h4>Date & Time</h4>
             <input type="date" id="pickup-date" name="pickup-date" required><br>
             <input type="time" id="pickup-time" name="pickup-time" required>
             
             <h4>Pickup Method</h4>
-            <input type="radio" name="pickup-method" value="" checked>
-            <label for="pickup-method">In-Store</label>
+            <label class="radio-option">
+              <input type="radio" name="pickup-method" value="" checked>
+              <span>In-Store</span>
+            </label>
+            
           </div>
 
-          <div>
+          <div class="payment-method-section">
             <h4>Payment Method</h4>
             <input type="radio" id="apple-pay" name="payment-method" value="">
             <label for="apple-pay">Apple Pay</label><br>
@@ -318,7 +324,7 @@ to match your perfect level of sweetness and ice.
             <label for="card">Add a new payment method</label>
           </div>
 
-          <div>
+          <div class="payment-info-section">
             <h4>Payment Information</h4>
             <label for="card-name">Cardholder Name</label>
             <input type="text" id="card-name" required><br>
@@ -376,7 +382,7 @@ to match your perfect level of sweetness and ice.
 
         <h4>Rendered element:</h4>
 
-        <div>
+        <div class="cart">
           <h2>Cart Details</h2>
 
           <div class="cart-item">
@@ -433,7 +439,19 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>Fonts</h3>
-        <img src="image/font.jpg" alt="bellingan font" width="500">
+        <div class="font">
+          <p id="ligema">Ligema</p>
+          <p>Font Weight: Regular 400</p>
+        </div>
+        <div class="font">
+          <p id="nanum">Nanum Pen Script</p>
+          <p>Font Weight: Regular 400</p>
+        </div>
+
+        <div class="font">
+          <p id="line-seed">LINE Seed JP</p>
+          <p>Font Weight: Regular 400</p>
+        </div>
       </section>
 
       <section class="element">
