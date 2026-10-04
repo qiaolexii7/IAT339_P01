@@ -99,6 +99,24 @@ code {
   border-radius: 1.25rem;
 }
 
+.checkout-form span {
+  font-family: "LINE Seed JP", sans-serif;
+}
+
+.checkout-form button[type="submit"] {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 1rem;
+
+  width: 86%;
+  padding: 0.5rem;
+
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
 .radio-option {
   display: inline-flex;
   align-items: center;
@@ -122,12 +140,17 @@ code {
   accent-color: #c5850f;
 }
 
+.payment-method-section .radio-option {
+  min-width: 86%;
+  margin-bottom: 0.5rem;
+}
+
 .cart {
   max-width: 20rem;
   margin: 0 auto;
   padding: 1.5rem;
 
-  background-color: F0EDED;
+  background-color: white;
   border: 0.1rem solid #f0eded;
   border-radius: 1.25rem;
 }
