@@ -28,27 +28,40 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 0.9rem;
   padding: 2rem;
+  color: #2d2926;
+  background-color: #fcf8ef;
 }
 
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: black;
+  border-top-color: #2d2926;
+}
+
+h1 {
+  font-family: "Ligema", sans-serif;
+  font-size: 4rem;
 }
 
 h2 {
+  font-family: "Nanum Pen", cursive;
+  font-size: 2rem;
   margin-top: 6rem;
 }
 
 h3 {
+  font-family: "Nanum Pen", cursive;
   font-style: italic;
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
 
 h4 {
+  font-family: "LINE Seed JP", sans-serif;
   margin-bottom: 0.25rem;
 }
 
@@ -56,9 +69,19 @@ p {
   margin-top: 0;
 }
 
-nav a:hover,
-nav a:focus {
-  text-decoration: none;
+header nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  margin-bottom: 0;
 }
 
 code {
@@ -71,25 +94,56 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
-.button-nav {
-  display: inline-block;
-  padding: 0.5rem;
+/* Primary action button */
+.primary-button {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.65rem 4.25rem;
   color: white;
-  background-color: rgb(50, 50, 50);
-  text-decoration: none;
+  background-color: #83b6f1;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
+  margin-top: 1.5rem;
+  width: 100%;
 }
 
-.button-nav:hover,
-.button-nav:focus {
-  background-color: rgb(200, 200, 200);
+.primary-button:hover,
+.primary-button:focus {
+  background-color: #2d2926;
+}
+
+/* Styling for the navigation button */
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: "LINE Seed JP", sans-serif;
+  font-weight: bold;
+  color: #83b6f1;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2d2926;
 }
 
 /* 
   TEXT ELEMENTS -------------------
 */
+
+.heading-example h1,
+.heading-example h2,
+.heading-example h3,
+.heading-example h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 /* 
   COMBINED ELEMENTS -------------------
@@ -100,25 +154,12 @@ code {
   gap: 2rem;
 }
 
-.main-nav a {
-  font-family: "LINE Seed JP", sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: black;
-}
-.main-nav a:hover {
-  color: #83b6f1;
-  transition: 0.25s;
-}
-
 .product-listing {
   max-width: 20rem;
   margin: 0 auto;
   padding: 1.5rem;
-
   background-color: white;
-  border: 0.1rem solid #f0eded;
+  border: 0.1rem solid #d9d5d2;
   border-radius: 1.25rem;
 }
 
@@ -128,7 +169,7 @@ code {
   padding: 1.5rem;
 
   background-color: white;
-  border: 0.1rem solid #f0eded;
+  border: 0.1rem solid #d9d5d2;
   border-radius: 1.25rem;
 }
 
@@ -147,7 +188,7 @@ code {
   margin-bottom: 0.5rem;
 }
 
-.checkout-form button[type="submit"] {
+/* .checkout-form button[type="submit"] {
   font-family: "LINE Seed JP", sans-serif;
   font-size: 1rem;
 
@@ -159,7 +200,7 @@ code {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-}
+} */
 
 .radio-option {
   display: inline-flex;
@@ -171,9 +212,9 @@ code {
 
   font-family: "LINE Seed JP", sans-serif;
 
-  color: black;
+  color: #2d2926;
   background-color: white;
-  border: 0.1rem solid #f0eded;
+  border: 0.1rem solid #d9d5d2;
   border-radius: 0.6rem;
 
   cursor: pointer;
@@ -198,8 +239,15 @@ code {
   padding: 1.5rem;
 
   background-color: white;
-  border: 0.1rem solid #f0eded;
+  border: 0.1rem solid #d9d5d2;
   border-radius: 1.25rem;
+}
+
+.cart > h3 {
+  font-family: "Ligema", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  margin: 0;
 }
 
 /*
@@ -237,7 +285,7 @@ code {
   width: 10rem;
   min-height: 8rem;
   padding: 1rem;
-  border: 0.1rem solid #222222;
+  border: 0.1rem solid #d9d5d2;
 }
 
 .colour-cream {
@@ -250,4 +298,33 @@ code {
 
 .colour-yellow {
   background-color: #ffd683;
+}
+
+.colour-dark {
+  background-color: #2d2926;
+  color: white;
+}
+
+.colour-soft-gray {
+  background-color: #d9d5d2;
+}
+
+.colour-gold {
+  background-color: #c5850f;
+  color: white;
+}
+
+/*
+  IMAGE
+*/
+.image-as-link {
+  width: 17rem;
+}
+
+.image-icon {
+  width: 5rem;
+}
+
+.product-image {
+  width: 50rem;
 }

@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>P01 - QQ Tea Style Guide</title>
+    <title>QQTea Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
   </head>
@@ -12,24 +12,18 @@
   <body>
 
     <header>
-      <h1>P01 - QQ Tea Style Guide</h1>
-
-      <p>A style guide for QQ Tea, a fictional online bubble tea shop</p>
-
-
       <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <!--
-        <a href="product_listing.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        -->
-        <a href="#branding_idea">Branding Idea</a>
-        <a href="#brand_components">Brand Components</a>
-        <a href="#citations">Citations</a>
+        <a class="nav-link" href="#interactive_elements">Interactive Elements</a>
+        <a class="nav-link" href="#text_elements">Text Elements</a>
+        <a class="nav-link" href="#combined_elements">Combined Elements</a>
+        <a class="nav-link" href="#branding_idea">Branding Idea</a>
+        <a class="nav-link" href="#brand_components">Brand Components</a>
+        <a class="nav-link" href="#citations">Citations</a>
       </nav>
 
+      <h1>QQTea Style Guide</h1>
+
+      <p>A style guide for QQTea, a fictional online bubble tea shop</p>
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -57,13 +51,13 @@
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <p>.nav-link</p>
 
         <h4>Sample code:</h4>
-        <pre><code>&lt;a href="#" class="button-nav"&gt;Menu&lt;/a&gt;</code></pre>
+        <pre><code>&lt;a href="#" class="nav-link"&gt;Menu&lt;/a&gt;</code></pre>
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Menu</a>
+        <a class="nav-link" href="#">Menu</a>
       </section>
 
 
@@ -80,6 +74,15 @@
         <button type="reset">Start Over</button>
       </section>
 
+      <section class="element">
+      <h3>Primary Action Button</h3>
+
+      <h4>Sample code:</h4>
+      <pre><code>&lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;</code></pre>
+
+      <h4>Rendered element:</h4>
+      <button class="primary-button" type="submit">Place Order</button>
+    </section>
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
@@ -111,16 +114,15 @@
 
       <section class="element">
         <h3>Image as a Link</h3>
-        <!--wait idk if we should have a page for like a single product and having the image link to that page ;-; wdyt-->
         <h4>Sample code:</h4>
         <pre><code>&lt;a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"&gt;
-  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea"&gt;
+  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link"&gt;
 &lt;/a&gt;</code></pre>
 
       <h4>Rendered element:</h4>
 
       <a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/">
-        <img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea">
+        <img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link">
       </a>
       </section>
 
@@ -134,27 +136,27 @@
     <section id="text_elements">
       <h2>Text Elements</h2>
 
-      <section class="element">
+      <section class="element heading-example">
         <h3>Headings</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;h1&gt;QQ Tea&lt;/h1&gt;
-&lt;h2&gt;Seasonal&lt;/h2&gt;
-&lt;h3&gt;Brown Sugar Milk Tea&lt;/h3&gt;
-&lt;h4&gt;Choose Your Sweetness&lt;/h4&gt;</code></pre>
+        <pre><code>&lt;h1&gt;Heading I&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
 
   <h4>Rendered element:</h4>
 
-  <h1>QQ Tea</h1>
-  <h2>Seasonal</h2>
-  <h3>Brown Sugar Milk Tea</h3>
-  <h4>Choose Your Sweetness</h4>
+  <h1>Heading I</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
       </section>
 
       <section class="element">
         <h3>Paragraphs</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;p&gt;
-QQ Tea makes playful drinks with freshly brewed tea,
+QQTea makes playful drinks with freshly brewed tea,
 fruit, milk, and chewy toppings! Every cup can be customized
 to match your perfect level of sweetness and ice.
 &lt;/p&gt;</pre></code>
@@ -162,7 +164,7 @@ to match your perfect level of sweetness and ice.
   <h4>Rendered element:</h4>
 
   <p>
-    QQ Tea makes playful drinks with freshly brewed tea,
+    QQTea makes playful drinks with freshly brewed tea,
     fruit, milk, and chewy toppings! Every cup can be customized
     to match your perfect level of sweetness and ice.
   </p>
@@ -210,10 +212,10 @@ to match your perfect level of sweetness and ice.
         <h4>Rendered element:</h4>
 
         <nav class="main-nav">
-          <a href="#home">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#contact">Contact Us</a>
-          <a href="#cart">Cart</a>
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#menu">Menu</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="#cart">Cart</a>
         </nav>
       </section>
 
@@ -221,8 +223,8 @@ to match your perfect level of sweetness and ice.
         <h3>Product/Service Listing</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;div&gt;
-  &lt;img src="image/product-example.jpg" alt="Brown sugar milk tea"&gt;
-  &lt;h3&gt;Brown Sugar QQ Tea&lt;/h3&gt;
+  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-icon"&gt;
+  &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
   &lt;h4&gt;$6.70&lt;/h4&gt;
   &lt;p&gt;Brown Sugar Pearl Milk Tea&lt;/p&gt;
   &lt;a href="brown-sugar-milk-tea.html"&gt;View Details&lt;/a&gt;
@@ -232,8 +234,8 @@ to match your perfect level of sweetness and ice.
         <h4>Rendered element:</h4>
     
         <div class="product-listing">
-          <img src="image/product-example.jpg" alt="Brown sugar pearl milk tea">
-          <h3>Brown Sugar QQ Tea</h3>
+          <img src="image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon">
+          <h3>Brown Sugar QQTea</h3>
           <h4>$6.70</h4>
           <p>Brown Sugar Pearl Milk Tea</p>
           <a href="brown-sugar-milk-tea.html">View Details</a>
@@ -283,7 +285,7 @@ to match your perfect level of sweetness and ice.
     &lt;input type="text" id="cvv" placeholder="CVV" required&gt;
   &lt;/div&gt;
 
-  &lt;button type="submit"&gt;Place Order&lt;/button&gt;
+  &lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;
 &lt;/form&gt;</code></pre>
         
         <h4>Rendered element:</h4>
@@ -348,7 +350,7 @@ to match your perfect level of sweetness and ice.
             <input type="text" id="cvv" placeholder="CVV" required>
           </div>
 
-          <button type="submit">Place Order</button>
+          <button class="primary-button" type="submit">Place Order</button>
           
         </form>         
       </section>
@@ -357,10 +359,10 @@ to match your perfect level of sweetness and ice.
         <h3>Checkout Cart</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;div&gt;
-  &lt;h3&gt;Cart Details&lt;/h3&gt;
+  &lt;h3&gt;CART DETAILS&lt;/h3&gt;
   &lt;div class="cart-item"&gt;
     &lt;div&gt;
-      &lt;h3&gt;Brown Sugar QQ Tea&lt;/h3&gt;
+      &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
       &lt;h4&gt;$6.70&lt;/h4&gt;
       &lt;p&gt;100% Sugar&lt;/p&gt;
       &lt;p&gt;No Ice&lt;/p&gt;
@@ -386,17 +388,17 @@ to match your perfect level of sweetness and ice.
     &lt;h4&gt;Total&lt;/h4&gt;
     &lt;h4&gt;$13.60&lt;/h4&gt;
   &lt;/div&gt;
-  &lt;button type="submit"&gt;Proceed to Checkout&lt;/button&gt;
+  &lt;button class="primary-button" type="submit"&gt;Proceed to Checkout&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
         <h4>Rendered element:</h4>
 
         <div class="cart">
-          <h3>Cart Details</h3>
+          <h3>CART DETAILS</h3>
 
           <div class="cart-item">
             <div>
-              <h3>Brown Sugar QQ Tea</h3>
+              <h3>Brown Sugar QQTea</h3>
               <h4>$5.60</h4>
               <p>100% Sugar</p>
               <p>No Ice</p>
@@ -424,7 +426,7 @@ to match your perfect level of sweetness and ice.
             <h4>Total</h4>
             <h4>$11.40</h4>
           </div>
-          <button type="submit">Proceed to Checkout</button>
+          <button class="primary-button" type="submit">Proceed to Checkout</button>
         </div>
 
       </section>
@@ -437,7 +439,7 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>About Us</h3>
-        <p>QQ Tea is an affordable bubble tea shop that offers a variety of customizable drinks with convenient in-store pickup. Customers can order ahead and choose to pick up their drinks as soon as possible or schedule a pickup time. The brand is meant to be friendly, casual, and approachable, like a friend who helps you get your favourite drink without spending too much money or time. We believe our affordable pricing and order-ahead feature make the shop appealing to customers who want a quick and budget-friendly drink option.</p>
+        <p>QQTea is an affordable bubble tea shop that offers a variety of customizable drinks with convenient in-store pickup. Customers can order ahead and choose to pick up their drinks as soon as possible or schedule a pickup time. The brand is meant to be friendly, casual, and approachable, like a friend who helps you get your favourite drink without spending too much money or time. We believe our affordable pricing and order-ahead feature make the shop appealing to customers who want a quick and budget-friendly drink option.</p>
       </section>
     </section>
     <!-- // BRANDING IDEA SECTION -->
@@ -454,7 +456,7 @@ to match your perfect level of sweetness and ice.
           <p>Used for the QQTea logo and occasional large brand focused display text.</p>
         </div>
         <div class="font">
-          <p id="nanum">Brown Sugar QQ Tea</p>
+          <p id="nanum">Brown Sugar QQTea</p>
           <p>Nanum Pen Script: Regular 400</p>
           <p>Used for drink names and secondary headings.</p>
         </div>
@@ -470,27 +472,41 @@ to match your perfect level of sweetness and ice.
         <h3>Colour Palettes</h3>
 
         <div class="colour-palette">
-          <div class="colour-swatch colour-cream">
-            <p>#FCF8EF</p>
-            <p>Primary background</p>
-          </div>
-
+              <div class="colour-swatch colour-cream">
+      <p>#FCF8EF</p>
+      <p>Primary background</p>
+        </div>
           <div class="colour-swatch colour-blue">
             <p>#83B6F1</p>
-            <p>Navigation and links</p>
+            <p>Primary actions and links</p>
           </div>
 
           <div class="colour-swatch colour-yellow">
             <p>#FFD683</p>
-            <p>Highlights and hover states</p>
+            <p>Hover states and highlights</p>
+          </div>
+
+          <div class="colour-swatch colour-dark">
+            <p>#2D2926</p>
+            <p>Primary text</p>
+          </div>
+
+          <div class="colour-swatch colour-soft-gray">
+            <p>#D9D5D2</p>
+            <p>Borders and structure</p>
+          </div>
+
+          <div class="colour-swatch colour-gold">
+            <p>#C5850F</p>
+            <p>Selected states and accents</p>
           </div>
         </div>
       </section>
 
       <section class="element">
         <h3>Imagery and Art Direction</h3>
-        <img src="image/brown-sugar-milk-tea.jpg"
-            alt="Brown sugar milk tea">
+        <img src="image/product-example.jpg"
+            alt="product examples of different types of tea" class="product-image">
         <p>Product imagery will be used in menu listings, individual drink pages,
           and checkout previews so customers can quickly recognize what they are ordering.</p>
       </section>
