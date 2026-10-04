@@ -8,17 +8,16 @@
 */
 @font-face {
   font-family: "Ligema";
-  src: url(/IAT339-P01/fonts/ligema/Ligema\ DEMO.otf);
+  src: url("../fonts/ligema/LigemaDEMO.otf");
 }
 @font-face {
   font-family: "Nanum Pen";
-  src: url(/IAT339-P01/fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf)
+  src: url("../fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "LINE Seed JP";
-  src: url("/IAT339-P01/fonts/LINE_Seed_JP/LINESeedJP-Regular.ttf")
-    format("truetype");
+  src: url("../fonts/LINE_Seed_JP/LINESeedJP-Regular.ttf");
   font-weight: 400;
 }
 
