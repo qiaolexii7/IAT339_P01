@@ -294,26 +294,32 @@ to match your perfect level of sweetness and ice.
           <div class="pickup-section">
             <h3>PICKUP DETAILS</h3>
             <h4>Schedule Pickup</h4>
-            <label class="radio-option">
-              <input type="radio" id="asap" name="schedule-pickup" value="" checked>
-              <span>ASAP</span>
-            </label>
 
-            <label class="radio-option">
-              <input type="radio" id="schedule" name="schedule-pickup" value="">
-              <span>Schedule</span>
-            </label>
+            <div class="schedule-pickup-section">
+              <label class="radio-option">
+                <input type="radio" id="asap" name="schedule-pickup" value="" checked>
+                <span>ASAP</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" id="schedule" name="schedule-pickup" value="">
+                <span>Schedule</span>
+              </label>
+            </div>
 
             <h4>Date & Time</h4>
-            <input type="date" id="pickup-date" name="pickup-date" required><br>
-            <input type="time" id="pickup-time" name="pickup-time" required>
+            <div class="datetime-section">
+              <input type="date" id="pickup-date" name="pickup-date" required>
+              <input type="time" id="pickup-time" name="pickup-time" required>
+            </div>
             
             <h4>Pickup Method</h4>
-            <label class="radio-option">
-              <input type="radio" name="pickup-method" value="" checked>
-              <span>In-Store</span>
+            <div class="pickup-method-section">
+              <label class="radio-option">
+                <input type="radio" name="pickup-method" value="" checked>
+                <span>In-Store</span>
             </label>
-            
+
+            </div>
           </div>
 
           <div class="payment-method-section">
@@ -332,22 +338,30 @@ to match your perfect level of sweetness and ice.
               <input type="radio" id="card" name="payment-method" value="">
               <span>Add a new payment method</span><br>
             </label>
-
           </div>
 
           <div class="payment-info-section">
             <h4>Payment Information</h4>
-            <label for="card-name">Cardholder Name</label>
-            <input type="text" id="card-name" required><br>
 
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" placeholder="1234 4567 9012 3456" required><br>
+            <div class="cardholder-field">
+              <label for="card-name">Cardholder Name</label>
+              <input type="text" id="card-name" required>
+            </div>
 
-            <label for="expiration">Expiration Date</label>
-            <input type="text" id="expiration" placeholder="MM/YY" required><br> 
+            <div class="card-number-field">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" placeholder="1234 4567 9012 3456" required>
+            </div>
 
-            <label for="cvv">Security Code</label>
-            <input type="text" id="cvv" placeholder="CVV" required>
+            <div class="expiration-field">
+              <label for="expiration">Expiration Date</label>
+            <input type="text" id="expiration" placeholder="MM/YY" required>
+            </div>
+
+            <div class="cvv-field">
+              <label for="cvv">Security Code</label>
+              <input type="text" id="cvv" placeholder="CVV" required>
+            </div>
           </div>
 
           <button class="primary-button" type="submit">Place Order</button>
