@@ -94,7 +94,7 @@ code {
   margin: 0 auto;
   padding: 1.5rem;
 
-  background-color: F0EDED;
+  background-color: #f0eded;
   border: 0.1rem solid #f0eded;
   border-radius: 1.25rem;
 }
@@ -152,4 +152,32 @@ code {
   font-family: "LINE Seed JP";
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+/*
+  COLORS
+*/
+.colour-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.colour-swatch {
+  width: 10rem;
+  min-height: 8rem;
+  padding: 1rem;
+  border: 0.1rem solid #222222;
+}
+
+.colour-cream {
+  background-color: #fcf8ef;
+}
+
+.colour-blue {
+  background-color: #83b6f1;
+}
+
+.colour-yellow {
+  background-color: #ffd683;
 }
