@@ -357,7 +357,7 @@ code {
 */
 
 .cart {
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 1.5rem;
 
@@ -380,12 +380,9 @@ code {
 
   padding: 1rem;
   margin-bottom: 1rem;
-
-  border: 0.1rem solid #d9d5d2;
-  border-radius: 1rem;
 }
 .cart-item .image-icon {
-  width: 90%;
+  width: 60%;
   height: auto;
   object-fit: cover;
 }
@@ -394,32 +391,38 @@ code {
   display: flex;
   flex-direction: column;
 }
-.cart-item-info h3 {
+.cart-title-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-title-price h3 {
   margin: 0;
   font-size: 1.75rem;
 }
-.cart-item-info h4,
-.cart-item-info p {
+.cart-title-price h4 {
   margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #ffd683;
+  border-radius: 0.5rem;
 }
 
 .cart-edit {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
-  margin-top: 1.25rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
 }
-.cart-edit h4 {
-  padding: 0.5rem 1rem;
-  background-color: #ffd683;
-  border-radius: 0.5rem;
-}
-.cart-edit button {
+
+.remove-btn {
   font-family: "LINE Seed JP", sans-serif;
   font-weight: bold;
   color: red;
+
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* Styling for the Counter*/
@@ -428,7 +431,7 @@ code {
   align-items: center;
   width: fit-content;
 
-  border: 0.1rem solid #2d2926;
+  border: 0.1rem solid #d9d5d2;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -450,8 +453,8 @@ code {
   text-align: center;
 
   border: none;
-  border-left: 0.1rem solid #2d2926;
-  border-right: 0.1rem solid #2d2926;
+  border-left: 0.1rem solid #d9d5d2;
+  border-right: 0.1rem solid #d9d5d2;
   outline: none;
 }
 /*
@@ -469,6 +472,8 @@ This hides the deafult styling html have for input type="number" or else it has 
   justify-content: space-between;
 
   font-size: 1.25rem;
+
+  border-top: 0.1rem solid #d9d5d2;
 }
 
 /*
