@@ -24,6 +24,7 @@
       <h1>QQTea Style Guide</h1>
 
       <p>A style guide for QQTea, a fictional online bubble tea shop</p>
+    </header>
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -35,7 +36,7 @@
         <h4>Sample code:</h4>
         <pre><code>&lt;p&gt;
   Craving something new? Explore our
-  &lt;a class="intext-link" href="#seasonal"&gt;seasonal tea collection&lt;/a&gt;
+  &lt;a class="intext-link" href="#seasonal"&gt;seasonal tea collection&lt;/a&gt;.
 &lt;/p&gt;</code></pre>
 
         <h4>Rendered element:</h4>
@@ -54,7 +55,7 @@
         <p>.nav-link</p>
 
         <h4>Sample code:</h4>
-        <pre><code>&lt;a href="#" class="nav-link"&gt;View Details&lt;/a&gt;</code></pre>
+        <pre><code>&lt;a class="nav-link" href="#"&gt;View Details&lt;/a&gt;</code></pre>
 
         <h4>Rendered element:</h4>
         <a class="nav-link" href="#">View Details</a>
@@ -65,8 +66,10 @@
         <h3>Submit/Reset Buttons</h3>
         <!--type="submit" and type="reset" required later-->
         <h4>Sample code:</h4>
-        <pre><code>&lt;button type="submit"&gt;Add to Cart&lt;/button&gt;
-&lt;button type="reset"&gt;Start Over&lt;/button&gt;</code></pre>
+        <pre><code>&lt;div class="submit-reset-button"&gt;
+  &lt;button type="submit"&gt;Add to Cart&lt;/button&gt;
+  &lt;button type="reset"&gt;Start Over&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 
         <h4>Rendered element:</h4>
 
@@ -89,8 +92,10 @@
       <section class="element">
         <h3>Text Input Field with Label</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
-&lt;input type="text" id="cup-name" placeholder="Your name"&gt;</code></pre>
+        <pre><code>&lt;div class="input-label-section"&gt;
+  &lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
+  &lt;input type="text" id="cup-name" placeholder="Your name"&gt;
+&lt;/div&gt;</code></pre>
       
         <h4>Rendered element:</h4>
         <div class="input-label-section">
@@ -103,8 +108,10 @@
       <section class="element">
         <h3>Radio Button with Label</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;input type="radio" id="half-sweet" value="50"&gt;
-&lt;label for="half-sweet"&gt;50% Sweet&lt;/label&gt;</code></pre>
+        <pre><code>&lt;label class="radio-option"&gt;
+  &lt;input type="radio" id="half-sweet" value="50"&gt;
+  &lt;span&gt;50% Sweet&lt;/span&gt;
+&lt;/label&gt;</code></pre>
 
         <h4>Rendered element:</h4>
 
@@ -205,7 +212,7 @@ to match your perfect level of sweetness and ice.
       <section class="element">
         <h3>Main Navigation</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;nav&gt;
+        <pre><code>&lt;nav class="main-nav"&gt;
   &lt;a class="nav-link" href="#home"&gt;Home&lt;/a&gt;
   &lt;a class="nav-link" href="#menu"&gt;Menu&lt;/a&gt;
   &lt;a class="nav-link" href="#contact"&gt;Contact Us&lt;/a&gt;
@@ -223,15 +230,23 @@ to match your perfect level of sweetness and ice.
       </section>
 
       <section class="element">
-        <h3>Product/Service Listing</h3>
+        <h3>Product Listing</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;div&gt;
-  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-icon"&gt;
-  &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
-  &lt;h4&gt;$5.60&lt;/h4&gt;
-  &lt;p&gt;Brown Sugar Pearl Milk Tea&lt;/p&gt;
-  &lt;a href="brown-sugar-milk-tea.html"&gt;View Details&lt;/a&gt;
-  &lt;button type="button"&gt;Add to cart&lt;/button&gt;
+        <pre><code>&lt;div class="product-listing"&gt;
+  &lt;a href="brown-sugar-milk-tea.html" class="product-image-link"&gt;
+    &lt;img src="image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon"&gt;
+  &lt;/a&gt;
+
+  &lt;div class="product-info"&gt;
+    &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
+    &lt;p&gt;Brown Sugar Pearl Milk Tea&lt;/p&gt;
+    &lt;a class="intext-link" href="brown-sugar-milk-tea.html"&gt;View Details&lt;/a&gt;
+
+    &lt;div class="price-cart"&gt;
+      &lt;h4&gt;$6.70&lt;/h4&gt;
+      &lt;button type="button"&gt;Add to cart&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
         <h4>Rendered element:</h4>
@@ -258,45 +273,83 @@ to match your perfect level of sweetness and ice.
       <section class="element">
         <h3>Payment Form</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;form&gt;
-  &lt;div&gt;
-    &lt;h3&gt;Pickup Details&lt;/h3&gt;
+        <pre><code>&lt;form class="checkout-form"&gt;
+  &lt;div class="pickup-section"&gt;
+    &lt;h3&gt;PICKUP DETAILS&lt;/h3&gt;
     &lt;h4&gt;Schedule Pickup&lt;/h4&gt;
-    &lt;input type="radio" id="asap" name="schedule-pickup" value="" checked&gt;
-    &lt;label for="schedule-pickup"&gt;ASAP&lt;/label&gt;
-    &lt;input type="radio" id="schedule" name="schedule-pickup" value=""&gt;
-    &lt;label for="schedule-pickup"&gt;Schedule&lt;/label&gt;
-    &lt;h4&gt;Date & Time&lt;/h4&gt;
-    &lt;input type="date" id="pickup-date" name="pickup-date" required&gt;&lt;br&gt;
-    &lt;input type="time" id="pickup-time" name="pickup-time" required&gt;
+
+    &lt;div class="schedule-pickup-section"&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" id="asap" name="schedule-pickup" value="" checked&gt;
+        &lt;span&gt;ASAP&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" id="schedule" name="schedule-pickup" value=""&gt;
+        &lt;span&gt;Schedule&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;h4&gt;Date &amp; Time&lt;/h4&gt;
+    &lt;div class="datetime-section"&gt;
+      &lt;input type="date" id="pickup-date" name="pickup-date" required&gt;
+      &lt;input type="time" id="pickup-time" name="pickup-time" required&gt;
+    &lt;/div&gt;
+
     &lt;h4&gt;Pickup Method&lt;/h4&gt;
-    &lt;input type="radio" name="pickup-method" value="" checked&gt;
-    &lt;label for="pickup-method"&gt;In-Store&lt;/label&gt;
+    &lt;div class="pickup-method-section"&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" name="pickup-method" value="" checked&gt;
+        &lt;span&gt;In-Store&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div&gt;
+
+  &lt;div class="payment-method-section"&gt;
     &lt;h4&gt;Payment Method&lt;/h4&gt;
-    &lt;input type="radio" id="apple-pay" name="payment-method" value=""&gt;
-    &lt;label for="apple-pay"&gt;Apple Pay&lt;/label&gt;&lt;br&gt;
-    &lt;input type="radio" id="google-pay" name="payment-method" value=""&gt;
-    &lt;label for="google-pay"&gt;Google Pay&lt;/label&gt;&lt;br&gt;
-    &lt;input type="radio" id="card" name="payment-method" value=""&gt;
-    &lt;label for="card"&gt;Add a new payment method&lt;/label&gt;
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="apple-pay" name="payment-method" value=""&gt;
+      &lt;span&gt;Apple Pay&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
+
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="google-pay" name="payment-method" value=""&gt;
+      &lt;span&gt;Google Pay&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
+
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="card" name="payment-method" value=""&gt;
+      &lt;span&gt;Add a new payment method&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
   &lt;/div&gt;
 
-  &lt;div&gt;
+
+  &lt;div class="payment-info-section"&gt;
     &lt;h4&gt;Payment Information&lt;/h4&gt;
-    &lt;label for="card-name"&gt;Cardholder Name&lt;/label&gt;
-    &lt;input type="text" id="card-name" required&gt;&lt;br&gt;
-    &lt;label for="card-number"&gt;Card Number&lt;/label&gt;
-    &lt;input type="text" id="card-number" placeholder="1234 4567 9012 3456" required&gt;&lt;br&gt;
-    &lt;label for="expiration"&gt;Expiration Date&lt;/label&gt;
-    &lt;input type="text" id="expiration" placeholder="MM/YY" required&gt;&lt;br&gt; 
-    &lt;label for="cvv"&gt;Security Code&lt;/label&gt;
-    &lt;input type="text" id="cvv" placeholder="CVV" required&gt;
+
+    &lt;div class="cardholder-field"&gt;
+      &lt;label for="card-name"&gt;Cardholder Name&lt;/label&gt;
+      &lt;input type="text" id="card-name" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card-number-field"&gt;
+      &lt;label for="card-number"&gt;Card Number&lt;/label&gt;
+      &lt;input type="text" id="card-number" placeholder="1234 4567 9012 3456" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="expiration-field"&gt;
+      &lt;label for="expiration"&gt;Expiration Date&lt;/label&gt;
+      &lt;input type="text" id="expiration" placeholder="MM/YY" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="cvv-field"&gt;
+      &lt;label for="cvv"&gt;Security Code&lt;/label&gt;
+      &lt;input type="text" id="cvv" placeholder="CVV" required&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;
+
 &lt;/form&gt;</code></pre>
         
         <h4>Rendered element:</h4>
@@ -328,8 +381,7 @@ to match your perfect level of sweetness and ice.
               <label class="radio-option">
                 <input type="radio" name="pickup-method" value="" checked>
                 <span>In-Store</span>
-            </label>
-
+              </label>
             </div>
           </div>
 
@@ -383,35 +435,61 @@ to match your perfect level of sweetness and ice.
       <section class="element">
         <h3>Checkout Cart</h3>
         <h4>Sample code:</h4>
-        <pre><code>&lt;div&gt;
-  &lt;h3&gt;CART DETAILS&lt;/h3&gt;
-  &lt;div class="cart-item"&gt;
-    &lt;div&gt;
-      &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
-      &lt;h4&gt;$6.70&lt;/h4&gt;
+        <pre><code>&lt;div class="cart-item"&gt;
+    &lt;img src="image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon"&gt;
+
+    &lt;div class="cart-item-info"&gt;
+      &lt;div class="cart-title-price"&gt;
+        &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
+        &lt;h4&gt;$5.60&lt;/h4&gt;
+      &lt;/div&gt;
+
       &lt;p&gt;100% Sugar&lt;/p&gt;
       &lt;p&gt;No Ice&lt;/p&gt;
-      &lt;label for="quantity"&gt;Quantity&lt;/label&gt;
-      &lt;input type="number" id="quantity-brown-sugar" value="1" min="1"&gt;
+
+      &lt;div class="cart-edit"&gt;
+
+        &lt;div class="quantity-control"&gt;
+          &lt;button type="button"&gt;-&lt;/button&gt;
+          &lt;input type="number" id="quantity-brown-sugar" value="1" min="1"&gt;
+          &lt;button type="button"&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
   &lt;/div&gt;
 
+
   &lt;div class="cart-item"&gt;
-    &lt;div&gt;
-      &lt;h3&gt;Osmanthus Lychee Lemonade&lt;/h3&gt;
-      &lt;h4&gt;$6.90&lt;/h4&gt;
+
+    &lt;img src="image/osmanthus-lychee-lemonade-icon.jpg" alt="Osmanthus Lychee Lemonade" class="image-icon"&gt;
+
+    &lt;div class="cart-item-info"&gt;
+
+      &lt;div class="cart-title-price"&gt;
+        &lt;h3&gt;Osmanthus Lychee Lemonade&lt;/h3&gt;
+        &lt;h4&gt;$5.80&lt;/h4&gt;
+      &lt;/div&gt;
+
       &lt;p&gt;50% Sugar&lt;/p&gt;
       &lt;p&gt;Less Ice&lt;/p&gt;
-      &lt;label for="quantity"&gt;Quantity&lt;/label&gt;
-      &lt;input type="number" id="quantity-lychee" value="1" min="1"&gt;
+
+      &lt;div class="cart-edit"&gt;
+        &lt;div class="quantity-control"&gt;
+          &lt;button type="button"&gt;-&lt;/button&gt;
+          &lt;input type="number" id="quantity-lychee" value="1" min="1"&gt;
+          &lt;button type="button"&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button class="remove-btn"&gt;Remove&lt;/button&gt
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
   &lt;/div&gt;
+
 
   &lt;div class="cart-total"&gt;
     &lt;h4&gt;Total&lt;/h4&gt;
-    &lt;h4&gt;$13.60&lt;/h4&gt;
+    &lt;h4&gt;$11.40&lt;/h4&gt;
   &lt;/div&gt;
   &lt;button class="primary-button" type="submit"&gt;Proceed to Checkout&lt;/button&gt;
 &lt;/div&gt;</code></pre>
@@ -436,7 +514,7 @@ to match your perfect level of sweetness and ice.
                 <div class="cart-edit">
                   <div class="quantity-control">
                     <button type="button">-</button>
-                    <input type="number" id="quantity-lychee" value="1" min="1">
+                    <input type="number" id="quantity-brown-sugar" value="1" min="1">
                     <button type="button">+</button>               
                   </div>
 
@@ -463,7 +541,6 @@ to match your perfect level of sweetness and ice.
                     <input type="number" id="quantity-lychee" value="1" min="1">
                     <button type="button">+</button>               
                   </div>
-
                   <button class="remove-btn">Remove</button>
                 </div>
               </div>
