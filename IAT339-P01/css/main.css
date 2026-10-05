@@ -594,3 +594,14 @@ This hides the deafult styling html have for input type="number" or else it has 
 .product-image {
   width: 50rem;
 }
+
+/*
+  DISPLAY
+*/
+pre {
+  max-height: 18rem;
+  overflow: auto;
+  padding: 1rem;
+  background-color: #f0eded;
+  border-radius: 0.5rem;
+}
