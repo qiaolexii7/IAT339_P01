@@ -220,7 +220,7 @@ code {
   margin: 0;
 }
 .product-info p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
 }
 
 .price-cart {
@@ -357,7 +357,7 @@ code {
 */
 
 .cart {
-  max-width: 20rem;
+  max-width: 30rem;
   margin: 0 auto;
   padding: 1.5rem;
 
@@ -372,42 +372,104 @@ code {
   font-style: normal;
   margin: 0;
 }
-/*
-.product-listing {
-  max-width: 20rem;
+
+.cart-item {
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 1rem;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  border: 0.1rem solid #d9d5d2;
+  border-radius: 1rem;
 }
-.product-image-link {
-  display: block;
-}
-.image-icon {
-  display: block;
+.cart-item .image-icon {
   width: 90%;
-  height: 90%;
+  height: auto;
   object-fit: cover;
 }
 
-.product-info {
+.cart-item-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
-.product-info h3 {
+.cart-item-info h3 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+.cart-item-info h4,
+.cart-item-info p {
   margin: 0;
 }
 
-.price-cart {
+.cart-edit {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-top: 1.25rem;
+}
+.cart-edit h4 {
+  padding: 0.5rem 1rem;
+  background-color: #ffd683;
+  border-radius: 0.5rem;
+}
+.cart-edit button {
+  font-family: "LINE Seed JP", sans-serif;
+  font-weight: bold;
+  color: red;
+  background: none;
+  border: none;
+}
+
+/* Styling for the Counter*/
+.quantity-control {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  border: 0.1rem solid #2d2926;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.quantity-control button {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+.quantity-control input {
+  width: 2rem;
+  height: 1.5rem;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  border: none;
+  border-left: 0.1rem solid #2d2926;
+  border-right: 0.1rem solid #2d2926;
+  outline: none;
+}
+/*
+This hides the deafult styling html have for input type="number" or else it has the little arrow thingy that actually allows you to changed the number.
+*/
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-total {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+
+  font-size: 1.25rem;
 }
-.price-cart h4 {
-  margin: 0;
-}
-*/
 
 /*
   FONTS
