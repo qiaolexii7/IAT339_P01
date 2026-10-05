@@ -94,6 +94,16 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+.intext-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #83b6f1;
+}
+.intext-link:hover,
+.intext-link:focus {
+  color: #d9d5d2;
+}
+
 /* Primary action button */
 .primary-button {
   font-family: "LINE Seed JP", sans-serif;
@@ -179,17 +189,80 @@ code {
   gap: 2rem;
 }
 
+/* 
+  PRODUCT LISTING SECTION -------------------
+*/
+
 .product-listing {
-  max-width: 20rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  max-width: 16rem;
   padding: 1.5rem;
+
   background-color: white;
   border: 0.1rem solid #d9d5d2;
   border-radius: 1.25rem;
 }
+.product-listing .image-icon {
+  display: block;
+  width: 12rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.product-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.25rem;
+}
+.product-info h4 {
+  margin: 0;
+}
+.product-info p {
+  margin: 0 0 0.5rem 0;
+}
+
+.price-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 1.25rem;
+}
+/*
+  This button is temporarly styled individually.
+  I tried applying the primary-button style but it wasn't flexble,
+  the way it spans was... interesting.
+*/
+.price-cart button {
+  font-family: "LINE Seed JP", sans-serif;
+  font-weight: bold;
+
+  padding: 0.5rem 1rem;
+
+  color: white;
+  background-color: #83b6f1;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+.price-cart button:hover,
+.price-cart button:focus {
+  background-color: #2d2926;
+}
+
+.price-cart h4 {
+  padding: 0.5rem 1rem;
+  background-color: #ffd683;
+  border-radius: 0.5rem;
+}
 
 /* 
-  PAYMENT FORM SECTION 
+  PAYMENT FORM SECTION -------------------
 */
 .checkout-form {
   max-width: 20rem;
@@ -243,35 +316,31 @@ code {
 .pickup-method-section .radio-option {
   flex: 0 0 calc(50% - 0.25rem);
 }
-
 .payment-method-section .radio-option {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
 }
+
 /* Styling for Payment Info */
 .payment-info-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
-
 .payment-info-section h4 {
   grid-column: 1 / -1;
 }
-
 .cardholder-field {
   grid-column: 1 / -1;
 }
 .card-number-field {
   grid-column: 1/ -1;
 }
-
 .payment-info-section label {
   display: block;
   margin-bottom: 0.25rem;
 }
-
 .payment-info-section input {
   width: 100%;
   padding: 0.5rem;
@@ -282,6 +351,10 @@ code {
   border-radius: 0.5rem;
   box-sizing: border-box;
 }
+
+/*
+  CHECKOUT CART SECTION -------------------
+*/
 
 .cart {
   max-width: 20rem;
@@ -299,6 +372,42 @@ code {
   font-style: normal;
   margin: 0;
 }
+/*
+.product-listing {
+  max-width: 20rem;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 1rem;
+}
+.product-image-link {
+  display: block;
+}
+.image-icon {
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-info h3 {
+  margin: 0;
+}
+
+.price-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.price-cart h4 {
+  margin: 0;
+}
+*/
 
 /*
   FONTS
