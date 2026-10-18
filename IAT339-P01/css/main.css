@@ -1,8 +1,3 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
-
 /* 
   LOCAL FONTS
 */
@@ -20,14 +15,34 @@
   src: url("../fonts/LINE_Seed_JP/LINESeedJP-Regular.ttf");
   font-weight: 400;
 }
-
 @font-face {
   font-family: "LINE Seed JP";
   src: url("../fonts/LINE_Seed_JP/LINESeedJP-Bold.ttf");
   font-weight: bold;
 }
 
+/* 
+  SHARED NAVIGATION
+*/
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*
+  STYLE GUIDE STYLING 
+*/
+
 body {
+  margin: 0;
   font-family: "LINE Seed JP", sans-serif;
   font-size: 0.9rem;
   padding: 2rem;
@@ -219,11 +234,6 @@ code {
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-.main-nav {
-  display: flex;
-  gap: 2rem;
-}
 
 /* 
   PRODUCT LISTING SECTION -------------------
