@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Product Listing Webpage</title>
+    <title>Checkout</title>
 
     <link href="../css/main.css" rel="stylesheet" />
   </head>
@@ -24,11 +24,9 @@
       </nav>
     </header>
 
-    <a class="">Back to Checkout</a>
-
     <form class="checkout-form">
       <div class="pickup-section">
-        <h3>PICKUP DETAILS</h3>
+        <h1>CHECKOUT DETAILS</h1>
         <h4>Schedule Pickup</h4>
 
         <div class="schedule-pickup-section">
@@ -107,6 +105,45 @@
         <div class="cvv-field">
           <label for="cvv">Security Code</label>
           <input type="text" id="cvv" placeholder="CVV" required />
+        </div>
+      </div>
+
+      <div class="order-summary-section">
+        <h4>Order Summary</h4>
+
+        <div class="order-item">
+          <h4 class="order-quantity">1x</h4>
+          <div class="order-item-info">
+            <h4>Brown Sugar QQ Tea</h4>
+            <p>No Ice, 100% Sugar</p>
+          </div>
+          <h4 class="order-price">$5.60</h4>
+        </div>
+
+        <div class="order-item">
+          <h4 class="order-quantity">1x</h4>
+          <div class="order-item-info">
+            <h4>Osmanthus Lychee Lemonade</h4>
+            <p>Less Ice, 50% Sugar</p>
+          </div>
+          <h4 class="order-price">$5.80</h4>
+        </div>
+
+        <div class="order-total">
+          <div class="total-row">
+            <p>Subtotal</p>
+            <p>$11.20</p>
+          </div>
+
+          <div class="total-row">
+            <p>Tax</p>
+            <p>$0.56</p>
+          </div>
+
+          <div class="total-row">
+            <h4>Total</h4>
+            <h4>$11.76</h4>
+          </div>
         </div>
       </div>
 
