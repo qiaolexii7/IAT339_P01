@@ -599,6 +599,13 @@ This hides the deafult styling html have for input type="number" or else it has 
   color: white;
 }
 
+/* 
+  CIATATION
+*/
+#citations li {
+  line-height: 1.6;
+}
+
 /*
   IMAGE
 */
