@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+  margin-bottom: 3rem;
 }
 .nav-left,
 .nav-right {
@@ -311,7 +312,7 @@ code {
   PAYMENT FORM SECTION -------------------
 */
 .checkout-form {
-  max-width: 20rem;
+  max-width: 37rem;
   margin: 0 auto;
   padding: 1.5rem;
 
@@ -402,7 +403,7 @@ code {
   CHECKOUT CART SECTION -------------------
 */
 .cart {
-  max-width: 40rem;
+  max-width: 37rem;
   margin: 0 auto;
   padding: 1.5rem;
 
@@ -411,11 +412,13 @@ code {
   border-radius: 1.25rem;
 }
 
-.cart > h3 {
-  font-family: "Ligema", sans-serif;
+.cart h1 {
   font-size: 3rem;
-  font-style: normal;
   margin: 0;
+}
+.cart h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cart-item {
@@ -519,9 +522,7 @@ This hides the deafult styling html have for input type="number" or else it has 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   font-size: 1.25rem;
-
   border-top: 0.1rem solid #d9d5d2;
 }
 
@@ -681,25 +682,16 @@ pre {
   PRODUCT LISTING WEBPAGE STYLING
 */
 
-.checkout-title {
-  text-align: center;
-  margin-top: 5rem;
-}
-.checkout-layout {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
-  max-width: 75rem;
-  margin: 2rem auto;
-  align-items: star;
-}
-.checkout-layout .cart,
-.checkout-layout .checkout-form {
-  width: 100%;
-  max-width: none;
-  margin: 0;
+/* 
+  CART WEBPAGE
+*/
+.checkout-layout .primary-button {
+  display: block;
   box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
 }
+
 /* 
   CHECKOUT WEBPAGE
 */

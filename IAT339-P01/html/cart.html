@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout Webpage</title>
+
+    <link href="/IAT339-P01/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-left">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="/IAT339-P01/html/index.html">Style Sheet</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="/IAT339-P01/html/product-listing.html"
+            >Menu</a
+          >
+          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="/IAT339-P01/html/cart.html">Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="checkout-layout">
+      <div class="cart">
+        <h1>CART DETAILS</h1>
+        <h4>Order Summary</h4>
+
+        <div class="cart-item">
+          <img
+            src="/IAT339-P01/image/brown-sugar-milk-tea-icon.jpg"
+            alt="Brown sugar pearl milk tea"
+            class="image-icon"
+          />
+
+          <div class="cart-item-info">
+            <div class="cart-title-price">
+              <h3>Brown Sugar QQTea</h3>
+              <h4>$5.60</h4>
+            </div>
+
+            <p>100% Sugar</p>
+            <p>No Ice</p>
+
+            <div class="cart-edit">
+              <div class="quantity-control">
+                <button type="button">-</button>
+                <input
+                  type="number"
+                  id="quantity-brown-sugar"
+                  value="1"
+                  min="1"
+                />
+                <button type="button">+</button>
+              </div>
+
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img
+            src="/IAT339-P01/image/osmanthus-lychee-lemonade-icon.jpg"
+            alt="Osmanthus Lychee Lemonade"
+            class="image-icon"
+          />
+
+          <div class="cart-item-info">
+            <div class="cart-title-price">
+              <h3>Osmanthus Lychee Lemonade</h3>
+              <h4>$5.80</h4>
+            </div>
+
+            <p>50% Sugar</p>
+            <p>Less Ice</p>
+
+            <div class="cart-edit">
+              <div class="quantity-control">
+                <button type="button">-</button>
+                <input type="number" id="quantity-lychee" value="1" min="1" />
+                <button type="button">+</button>
+              </div>
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-total">
+          <h4>Total</h4>
+          <h4>$11.40</h4>
+        </div>
+        <a class="primary-button" href="checkout.html"> Proceed to Checkout </a>
+      </div>
+    </section>
+  </body>
+</html>
