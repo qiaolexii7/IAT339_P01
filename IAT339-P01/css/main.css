@@ -52,10 +52,17 @@ body {
 
 .element {
   max-width: 65rem;
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: #2d2926;
+}
+
+.element-title {
+  font-family: "Nanum Pen", cursive;
+  font-size: 1.5rem;
+
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+
+  padding-left: 0.75rem;
+  border-left: 0.25rem solid #d9d5d2;
 }
 
 h1 {
@@ -66,11 +73,16 @@ h1 {
 h2 {
   font-family: "Nanum Pen", cursive;
   font-size: 2rem;
-  margin-top: 6rem;
+
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #2d2926;
 }
 
-#interactive_elements h2 {
-  margin-top: 0;
+#colour_palette h2 {
+  margin-top: 0rem;
 }
 
 h3 {

@@ -31,33 +31,125 @@
     <!-- STYLE GUIDE TITLE -->
     <header class="style-guide-header">
       <h1>QQTea Style Guide</h1>
-      <p>A style guide for QQTea, a fictional online bubble tea shop</p>
+          <p>
+            A style guide for QQTea, a fictional and affordable online bubble tea shop focused on fun drinks and convenient pickup.<br>
+            This guide documents QQTea’s visual identity, interface patterns, and reusable components.
+          </p>
     </header>
 
     <!-- SIDE NAV -->
     <div class="style-guide-layout">
       <nav class="style-guide-nav">
         <h4>STYLE GUIDE</h4>
+        <a class="nav-link" href="#colour_palette">Colour Palette</a>
+        <a class="nav-link" href="#typography">Typography</a>
+        <a class="nav-link" href="#imagery">Imagery & Art Direction</a>
+        <a class="nav-link" href="#brand_overview">Brand Overview</a>
+
         <a class="nav-link" href="#interactive_elements">Interactive Elements</a>
         <a class="nav-link" href="#text_elements">Text Elements</a>
         <a class="nav-link" href="#combined_elements">Combined Elements</a>
-        <a class="nav-link" href="#branding_idea">Branding Idea</a>
-        <a class="nav-link" href="#brand_components">Brand Components</a>
         <a class="nav-link" href="#citations">Citations</a>
       
         <h4 class="nav-section-heading">TEMPLATE</h4>
         <a class="nav-link" href="product-listing.html">Product Listing</a>
         <a class="nav-link" href="cart.html">Checkout</a>
+
       </nav>
 
     <main class="style-guide-main">
+         <section id="colour_palette">
+
+        <!-- COLOUR PALETTE SECTION-->
+        <h2>Colour Palette</h2>
+
+        <div class="colour-palette">
+              <div class="colour-swatch colour-cream">
+            <p>#FCF8EF</p>
+            <p>Primary background</p>
+        </div>
+          <div class="colour-swatch colour-blue">
+            <p>#83B6F1</p>
+            <p>Primary actions and links</p>
+          </div>
+
+          <div class="colour-swatch colour-yellow">
+            <p>#FFD683</p>
+            <p>Selected states and highlights</p>
+          </div>
+
+          <div class="colour-swatch colour-dark">
+            <p>#2D2926</p>
+            <p>Primary text and hover states</p>
+          </div>
+
+          <div class="colour-swatch colour-soft-gray">
+            <p>#D9D5D2</p>
+            <p>Borders and structure</p>
+          </div>
+
+          <div class="colour-swatch colour-gold">
+            <p>#C5850F</p>
+            <p>Selected states and accents</p>
+          </div>
+        </div>
+      </section>
+      <!-- COLOUR PALETTE SECTION-->
+
+      <!-- // TYPOGRAPHY SECTION-->
+       <section id="typography">
+        <h2>Typography</h2>
+
+        <section class="element">
+        <div class="font">
+          <p id="ligema">QQTea</p>
+          <p>Ligema: Regular 400</p>
+          <p>Used for the QQTea logo.</p>
+        </div>
+        <div class="font">
+          <p id="nanum">Brown Sugar QQTea</p>
+          <p>Nanum Pen Script: Regular 400</p>
+          <p>Used for drink names and secondary headings.</p>
+        </div>
+
+        <div class="font">
+          <p id="line-seed">MENU</p>
+          <p>LINE Seed JP: Regular 400, Regular 700</p>
+          <p>Used for navigation, body copy, prices, buttons, labels, and form information.</p>
+        </div>
+      </section>
+    </section>
+    <!-- // TYPOGRAPHY SECTION-->
+
+    <!-- // IMAGERY AND ART DIRECTION SECTION-->
+    <section id="imagery">
+      <h2>Imagery & Art Direction</h2>
+
+      <section class="element">
+        <img src="../image/product-example.jpg"
+            alt="product examples of different types of tea" class="product-image">
+        <p>Product imagery will be used in menu listings, individual drink pages,
+          and checkout previews so customers can quickly recognize what they are ordering.</p>
+      </section>
+    </section>
+    <!-- // IMAGERY AND ART DIRECTION SECTION-->
+
+    <!-- // BRANDING OVERVIEW SECTION -->
+    <section id="brand_overview">
+      <h2>Brand Overview</h2>
+
+      <section class="element">
+        <h3>About Us</h3>
+        <p>QQTea is an affordable bubble tea shop that offers a variety of customizable drinks with convenient in-store pickup. Customers can order ahead and choose to pick up their drinks as soon as possible or schedule a pickup time. The brand is meant to be friendly, casual, and approachable, like a friend who helps you get your favourite drink without spending too much money or time. We believe our affordable pricing and order-ahead feature make the shop appealing to customers who want a quick and budget-friendly drink option.</p>
+      </section>
+    </section>
+    <!-- // BRANDING OVERVIEW SECTION -->
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
-
       <section class="element">
-        <h3>In-text link</h3>
+        <h3 class="element-title">In-text link</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;p&gt;
   Craving something new? Explore our
@@ -74,7 +166,7 @@
 
       <section class="element">
 
-        <h3>Navigation Link</h3>
+        <h3 class="element-title">Navigation Link</h3>
 
         <h4>CSS selector:</h4>
         <p>.nav-link</p>
@@ -88,7 +180,7 @@
 
 
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+        <h3 class="element-title">Submit/Reset Buttons</h3>
         <!--type="submit" and type="reset" required later-->
         <h4>Sample code:</h4>
         <pre><code>&lt;div class="submit-reset-button"&gt;
@@ -105,7 +197,7 @@
       </section>
 
       <section class="element">
-      <h3>Primary Action Button</h3>
+      <h3 class="element-title">Primary Action Button</h3>
 
       <h4>Sample code:</h4>
       <pre><code>&lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;</code></pre>
@@ -115,7 +207,7 @@
     </section>
 
       <section class="element">
-        <h3>Text Input Field with Label</h3>
+        <h3 class="element-title">Text Input Field with Label</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;div class="input-label-section"&gt;
   &lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
@@ -131,7 +223,7 @@
 
 
       <section class="element">
-        <h3>Radio Button with Label</h3>
+        <h3 class="element-title">Radio Button with Label</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;label class="radio-option"&gt;
   &lt;input type="radio" id="half-sweet" value="50"&gt;
@@ -148,7 +240,7 @@
 
 
       <section class="element">
-        <h3>Image as a Link</h3>
+        <h3 class="element-title">Image as a Link</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"&gt;
   &lt;img src="../image/brown-sugar-milk-tea.png" alt="Brown sugar milk tea" class="image-as-link"&gt;
@@ -172,7 +264,7 @@
       <h2>Text Elements</h2>
 
       <section class="element heading-example">
-        <h3>Headings</h3>
+        <h3 class="element-title">Headings</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;h1&gt;Heading I&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
@@ -188,7 +280,7 @@
       </section>
 
       <section class="element">
-        <h3>Paragraphs</h3>
+        <h3 class="element-title">Paragraphs</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;p&gt;
 QQTea makes playful drinks with freshly brewed tea,
@@ -206,7 +298,7 @@ to match your perfect level of sweetness and ice.
       </section>
 
       <section class="element">
-        <h3>Numbered Lists</h3>
+        <h3 class="element-title">Numbered Lists</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;ol&gt;
   &lt;li&gt;Pick your drink&lt;/li&gt;
@@ -235,7 +327,7 @@ to match your perfect level of sweetness and ice.
       <h2>Combined Elements</h2>
 
       <section class="element">
-        <h3>Main Navigation</h3>
+        <h3 class="element-title">Main Navigation</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;nav class="main-nav"&gt;
   &lt;a class="nav-link" href="#home"&gt;Home&lt;/a&gt;
@@ -255,7 +347,7 @@ to match your perfect level of sweetness and ice.
       </section>
 
       <section class="element">
-        <h3>Product Listing</h3>
+        <h3 class="element-title">Product Listing</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;div class="product-listing"&gt;
   &lt;a href="brown-sugar-milk-tea.html" class="product-image-link"&gt;
@@ -296,7 +388,7 @@ to match your perfect level of sweetness and ice.
       </section>
 
       <section class="element">
-        <h3>Payment Form</h3>
+        <h3 class="element-title">Payment Form</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;form class="checkout-form"&gt;
   &lt;div class="pickup-section"&gt;
@@ -458,7 +550,7 @@ to match your perfect level of sweetness and ice.
       </section>
 
       <section class="element">
-        <h3>Checkout Cart</h3>
+        <h3 class="element-title">Checkout Cart</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;div class="cart-item"&gt;
     &lt;img src="image/brown-sugar-milk-tea-icon.png" alt="Brown sugar pearl milk tea" class="image-icon"&gt;
@@ -582,88 +674,6 @@ to match your perfect level of sweetness and ice.
       </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
-
-    <!-- // BRANDING IDEA SECTION -->
-    <section id="branding_idea">
-      <h2>Branding Idea</h2>
-
-      <section class="element">
-        <h3>About Us</h3>
-        <p>QQTea is an affordable bubble tea shop that offers a variety of customizable drinks with convenient in-store pickup. Customers can order ahead and choose to pick up their drinks as soon as possible or schedule a pickup time. The brand is meant to be friendly, casual, and approachable, like a friend who helps you get your favourite drink without spending too much money or time. We believe our affordable pricing and order-ahead feature make the shop appealing to customers who want a quick and budget-friendly drink option.</p>
-      </section>
-    </section>
-    <!-- // BRANDING IDEA SECTION -->
-
-    <!-- // BRAND COMPONENTS SECTION -->
-    <section id="brand_components">
-      <h2>Brand Components</h2>
-
-      <section class="element">
-        <h3>Fonts</h3>
-        <div class="font">
-          <p id="ligema">QQTea</p>
-          <p>Ligema: Regular 400</p>
-          <p>Used for the QQTea logo and occasional large brand focused display text.</p>
-        </div>
-        <div class="font">
-          <p id="nanum">Brown Sugar QQTea</p>
-          <p>Nanum Pen Script: Regular 400</p>
-          <p>Used for drink names and secondary headings.</p>
-        </div>
-
-        <div class="font">
-          <p id="line-seed">MENU</p>
-          <p>LINE Seed JP: Regular 400, Regular 700</p>
-          <p>Used for navigation, body copy, prices, buttons, labels, and form information.</p>
-        </div>
-      </section>
-
-      <section class="element">
-        <h3>Colour Palettes</h3>
-
-        <div class="colour-palette">
-              <div class="colour-swatch colour-cream">
-      <p>#FCF8EF</p>
-      <p>Primary background</p>
-        </div>
-          <div class="colour-swatch colour-blue">
-            <p>#83B6F1</p>
-            <p>Primary actions and links</p>
-          </div>
-
-          <div class="colour-swatch colour-yellow">
-            <p>#FFD683</p>
-            <p>Hover states and highlights</p>
-          </div>
-
-          <div class="colour-swatch colour-dark">
-            <p>#2D2926</p>
-            <p>Primary text</p>
-          </div>
-
-          <div class="colour-swatch colour-soft-gray">
-            <p>#D9D5D2</p>
-            <p>Borders and structure</p>
-          </div>
-
-          <div class="colour-swatch colour-gold">
-            <p>#C5850F</p>
-            <p>Selected states and accents</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="element">
-        <h3>Imagery and Art Direction</h3>
-        <img src="../image/product-example.jpg"
-            alt="product examples of different types of tea" class="product-image">
-        <p>Product imagery will be used in menu listings, individual drink pages,
-          and checkout previews so customers can quickly recognize what they are ordering.</p>
-      </section>
-
-    </section>
-    <!-- // BRAND COMPONENTS SECTION -->
-
 
 
     <section id="citations">
