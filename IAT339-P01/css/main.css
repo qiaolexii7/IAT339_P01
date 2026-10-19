@@ -623,6 +623,13 @@ This hides the deafult styling html have for input type="number" or else it has 
   color: white;
 }
 
+/* 
+  CIATATION
+*/
+#citations li {
+  line-height: 1.6;
+}
+
 /*
   IMAGE
 */
@@ -722,6 +729,7 @@ pre {
 .seasonal-offer-section h2 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  border-bottom: none;
 }
 .seasonal-offer-section p {
   max-width: 40rem;
@@ -742,6 +750,7 @@ pre {
 .product-category h2 {
   font-size: 3.5rem;
   margin: 1rem;
+  border-bottom: none;
 }
 .product-category p {
   font-size: 1rem;
