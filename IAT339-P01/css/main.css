@@ -427,7 +427,7 @@ code {
   margin-bottom: 1rem;
 }
 .cart-item .image-icon {
-  width: 60%;
+  width: 5rem;
   height: auto;
   object-fit: cover;
 }
@@ -656,10 +656,6 @@ pre {
 }
 
 @media (max-width: 50rem) {
-  body {
-    padding: 1rem;
-  }
-
   .style-guide-layout {
     flex-direction: column;
     gap: 2rem;
