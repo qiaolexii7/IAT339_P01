@@ -6,30 +6,33 @@
     <meta charset="utf-8">
     <title>QQTea Style Guide</title>
 
-    <link href="/IAT339-P01/css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <header>
-      <nav>        
+    <header class="style-guide-header">
+      <h1>QQTea Style Guide</h1>
+      <p>A style guide for QQTea, a fictional online bubble tea shop</p>
+    </header>
+
+    <div class="style-guide-layout">
+
+      <nav class="style-guide-nav">
+        <h4>STYLE GUIDE</h4>
         <a class="nav-link" href="#interactive_elements">Interactive Elements</a>
         <a class="nav-link" href="#text_elements">Text Elements</a>
         <a class="nav-link" href="#combined_elements">Combined Elements</a>
         <a class="nav-link" href="#branding_idea">Branding Idea</a>
         <a class="nav-link" href="#brand_components">Brand Components</a>
-
-        <a class="nav-link" href="/IAT339-P01/html/product-listing.html">Product Listing Webpage</a>
-        <a class="nav-link" href="/IAT339-P01/html/checkout.html">Checkout Webpage</a>
-
         <a class="nav-link" href="#citations">Citations</a>
+      
+        <h4 class="nav-section-heading">WEBSITE</h4>
+        <a class="nav-link" href="product-listing.html">Product Listing Webpage</a>
+        <a class="nav-link" href="checkout.html">Checkout Webpage</a>
       </nav>
 
-      <h1>QQTea Style Guide</h1>
-
-      <p>A style guide for QQTea, a fictional online bubble tea shop</p>
-    </header>
-
+    <main class="style-guide-main">
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -41,7 +44,7 @@
         <pre><code>&lt;p&gt;
   Craving something new? Explore our
   &lt;a class="intext-link" href="#seasonal"&gt;seasonal tea collection&lt;/a&gt;.
-&lt;/p&gt;</code></pre>
+&lt;/p&gt; </code></pre>
 
         <h4>Rendered element:</h4>
         <p>
@@ -130,13 +133,13 @@
         <h3>Image as a Link</h3>
         <h4>Sample code:</h4>
         <pre><code>&lt;a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"&gt;
-  &lt;img src="image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link"&gt;
+  &lt;img src="../image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link"&gt;
 &lt;/a&gt;</code></pre>
 
       <h4>Rendered element:</h4>
 
       <a class="image-link" href="https://www.foxyfolksy.com/brown-sugar-milk-tea/">
-        <img src="/IAT339-P01/image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link">
+        <img src="../image/brown-sugar-milk-tea.jpg" alt="Brown sugar milk tea" class="image-as-link">
       </a>
       </section>
 
@@ -257,7 +260,7 @@ to match your perfect level of sweetness and ice.
     
         <div class="product-listing">
           <a href="brown-sugar-milk-tea.html" class="product-image-link">
-           <img src="/IAT339-P01/image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon">
+           <img src="../image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon">
           </a>
           
           <div class="product-info">
@@ -504,7 +507,7 @@ to match your perfect level of sweetness and ice.
           <h3>CART DETAILS</h3>
 
           <div class="cart-item">
-              <img src="/IAT339-P01/image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon">
+              <img src="../image/brown-sugar-milk-tea-icon.jpg" alt="Brown sugar pearl milk tea" class="image-icon">
 
               <div class="cart-item-info">
                 <div class="cart-title-price">
@@ -528,7 +531,7 @@ to match your perfect level of sweetness and ice.
           </div>
 
           <div class="cart-item">
-              <img src="/IAT339-P01/image/osmanthus-lychee-lemonade-icon.jpg" alt="Osmanthus Lychee Lemonade" class="image-icon">
+              <img src="../image/osmanthus-lychee-lemonade-icon.jpg" alt="Osmanthus Lychee Lemonade" class="image-icon">
 
               <div class="cart-item-info">
                 <div class="cart-title-price">
@@ -633,7 +636,7 @@ to match your perfect level of sweetness and ice.
 
       <section class="element">
         <h3>Imagery and Art Direction</h3>
-        <img src="/IAT339-P01/image/product-example.jpg"
+        <img src="../image/product-example.jpg"
             alt="product examples of different types of tea" class="product-image">
         <p>Product imagery will be used in menu listings, individual drink pages,
           and checkout previews so customers can quickly recognize what they are ordering.</p>
@@ -655,6 +658,9 @@ to match your perfect level of sweetness and ice.
     </section>
 
 
+    </main>
 
-  </body>
+  </div>
+
+</body>
 </html>

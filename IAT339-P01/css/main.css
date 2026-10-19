@@ -40,7 +40,6 @@
 /*
   STYLE GUIDE STYLING 
 */
-
 body {
   margin: 0;
   font-family: "LINE Seed JP", sans-serif;
@@ -51,6 +50,7 @@ body {
 }
 
 .element {
+  max-width: 65rem;
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
@@ -66,6 +66,10 @@ h2 {
   font-family: "Nanum Pen", cursive;
   font-size: 2rem;
   margin-top: 6rem;
+}
+
+#interactive_elements h2 {
+  margin-top: 0;
 }
 
 h3 {
@@ -108,7 +112,6 @@ code {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
-
 .intext-link {
   font-weight: bold;
   text-decoration: none;
@@ -205,7 +208,6 @@ code {
 /* Styling for the navigation button */
 .nav-link {
   display: inline-block;
-  padding: 0.5rem;
   font-family: "LINE Seed JP", sans-serif;
   font-weight: bold;
   color: #83b6f1;
@@ -222,7 +224,6 @@ code {
 /* 
   TEXT ELEMENTS -------------------
 */
-
 .heading-example h1,
 .heading-example h2,
 .heading-example h3,
@@ -238,7 +239,6 @@ code {
 /* 
   PRODUCT LISTING SECTION -------------------
 */
-
 .product-listing {
   display: flex;
   flex-direction: column;
@@ -401,7 +401,6 @@ code {
 /*
   CHECKOUT CART SECTION -------------------
 */
-
 .cart {
   max-width: 40rem;
   margin: 0 auto;
@@ -608,14 +607,80 @@ This hides the deafult styling html have for input type="number" or else it has 
 /*
   DISPLAY
 */
+.style-guide-header {
+  margin-bottom: 3rem;
+}
+
+.style-guide-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.style-guide-header p {
+  margin-bottom: 0;
+}
+
+.style-guide-layout {
+  display: flex;
+  gap: 3rem;
+}
+
+.style-guide-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.style-guide-main {
+  flex: 1;
+  min-width: 0;
+}
+
 pre {
+  max-width: 100%;
   max-height: 18rem;
   overflow: auto;
   padding: 1rem;
+  box-sizing: border-box;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+
   background-color: #f0eded;
   border-radius: 0.5rem;
 }
 
+.product-image {
+  width: 50rem;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 50rem) {
+  body {
+    padding: 1rem;
+  }
+
+  .style-guide-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .style-guide-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+
+  .style-guide-nav h4 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .style-guide-nav .nav-section-heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
 /* 
   PRODUCT LISTING WEBPAGE
 */
