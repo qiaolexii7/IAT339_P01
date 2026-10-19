@@ -31,6 +31,30 @@
   padding: 0 2rem;
   margin-bottom: 3rem;
 }
+
+.main-nav a {
+  color: #83b6f1;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #2d2926;
+}
+
+.main-nav a.current,
+.main-nav a.current:visited {
+  color: #83b6f1;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.4rem;
+}
+
+#combined_elements .main-nav {
+  margin-top: 1.5rem;
+}
+
 .nav-left,
 .nav-right {
   display: flex;
