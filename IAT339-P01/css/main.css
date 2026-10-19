@@ -617,9 +617,28 @@ pre {
 }
 
 /* 
-  PRODUCT LISTING WEBPAGE
+  PRODUCT LISTING WEBPAGE STYLING
 */
 
+.checkout-title {
+  text-align: center;
+  margin-top: 5rem;
+}
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 2rem auto;
+  align-items: star;
+}
+.checkout-layout .cart,
+.checkout-layout .checkout-form {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* 
   CHECKOUT WEBPAGE
 */

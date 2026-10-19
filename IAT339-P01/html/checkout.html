@@ -7,5 +7,200 @@
     <link href="/IAT339-P01/css/main.css" rel="stylesheet" />
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-left">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="/IAT339-P01/html/index.html">Style Sheet</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="/IAT339-P01/html/product-listing.html"
+            >Menu</a
+          >
+          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="/IAT339-P01/html/checkout.html">Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="checkout-title">ORDER SUMMARY</h1>
+
+      <div class="checkout-layout">
+        <div class="cart">
+          <h3>CART DETAILS</h3>
+
+          <div class="cart-item">
+            <img
+              src="/IAT339-P01/image/brown-sugar-milk-tea-icon.jpg"
+              alt="Brown sugar pearl milk tea"
+              class="image-icon"
+            />
+
+            <div class="cart-item-info">
+              <div class="cart-title-price">
+                <h3>Brown Sugar QQTea</h3>
+                <h4>$5.60</h4>
+              </div>
+
+              <p>100% Sugar</p>
+              <p>No Ice</p>
+
+              <div class="cart-edit">
+                <div class="quantity-control">
+                  <button type="button">-</button>
+                  <input
+                    type="number"
+                    id="quantity-brown-sugar"
+                    value="1"
+                    min="1"
+                  />
+                  <button type="button">+</button>
+                </div>
+
+                <button class="remove-btn">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img
+              src="/IAT339-P01/image/osmanthus-lychee-lemonade-icon.jpg"
+              alt="Osmanthus Lychee Lemonade"
+              class="image-icon"
+            />
+
+            <div class="cart-item-info">
+              <div class="cart-title-price">
+                <h3>Osmanthus Lychee Lemonade</h3>
+                <h4>$5.80</h4>
+              </div>
+
+              <p>50% Sugar</p>
+              <p>Less Ice</p>
+
+              <div class="cart-edit">
+                <div class="quantity-control">
+                  <button type="button">-</button>
+                  <input type="number" id="quantity-lychee" value="1" min="1" />
+                  <button type="button">+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-total">
+            <h4>Total</h4>
+            <h4>$11.40</h4>
+          </div>
+        </div>
+
+        <form class="checkout-form">
+          <div class="pickup-section">
+            <h3>PICKUP DETAILS</h3>
+            <h4>Schedule Pickup</h4>
+
+            <div class="schedule-pickup-section">
+              <label class="radio-option">
+                <input
+                  type="radio"
+                  id="asap"
+                  name="schedule-pickup"
+                  value=""
+                  checked
+                />
+                <span>ASAP</span>
+              </label>
+              <label class="radio-option">
+                <input
+                  type="radio"
+                  id="schedule"
+                  name="schedule-pickup"
+                  value=""
+                />
+                <span>Schedule</span>
+              </label>
+            </div>
+
+            <h4>Date & Time</h4>
+            <div class="datetime-section">
+              <input type="date" id="pickup-date" name="pickup-date" required />
+              <input type="time" id="pickup-time" name="pickup-time" required />
+            </div>
+
+            <h4>Pickup Method</h4>
+            <div class="pickup-method-section">
+              <label class="radio-option">
+                <input type="radio" name="pickup-method" value="" checked />
+                <span>In-Store</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment-method-section">
+            <h4>Payment Method</h4>
+            <label class="radio-option">
+              <input
+                type="radio"
+                id="apple-pay"
+                name="payment-method"
+                value=""
+              />
+              <span>Apple Pay</span><br />
+            </label>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                id="google-pay"
+                name="payment-method"
+                value=""
+              />
+              <span>Google Pay</span><br />
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" id="card" name="payment-method" value="" />
+              <span>Add a new payment method</span><br />
+            </label>
+          </div>
+
+          <div class="payment-info-section">
+            <h4>Payment Information</h4>
+
+            <div class="cardholder-field">
+              <label for="card-name">Cardholder Name</label>
+              <input type="text" id="card-name" required />
+            </div>
+
+            <div class="card-number-field">
+              <label for="card-number">Card Number</label>
+              <input
+                type="text"
+                id="card-number"
+                placeholder="1234 4567 9012 3456"
+                required
+              />
+            </div>
+
+            <div class="expiration-field">
+              <label for="expiration">Expiration Date</label>
+              <input type="text" id="expiration" placeholder="MM/YY" required />
+            </div>
+
+            <div class="cvv-field">
+              <label for="cvv">Security Code</label>
+              <input type="text" id="cvv" placeholder="CVV" required />
+            </div>
+          </div>
+
+          <button class="primary-button" type="submit">Place Order</button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
