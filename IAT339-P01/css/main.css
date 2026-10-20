@@ -620,6 +620,29 @@ This hides the deafult styling html have for input type="number" or else it has 
   border: 0.1rem solid #d9d5d2;
 }
 
+.colour-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1 1 45%;
+  min-width: 30rem;
+}
+
+.colour-swatch {
+  flex: 0 0 10rem;
+}
+
+.colour-usage {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.colour-usage p {
+  margin: 0;
+}
+
 .colour-cream {
   background-color: #fcf8ef;
 }
