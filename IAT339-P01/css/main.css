@@ -474,13 +474,19 @@ code {
   display: flex;
   flex-direction: column;
 }
+.cart-item-info p {
+  line-height: 0.5rem;
+}
+
 .cart-title-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 .cart-title-price h3 {
   margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1.75rem;
 }
 .cart-title-price h4 {
@@ -495,21 +501,37 @@ code {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: auto;
+  margin-top: 0.25rem;
+}
+.cart-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+.edit-btn,
 .remove-btn {
   font-family: "LINE Seed JP", sans-serif;
   font-weight: bold;
-  color: red;
+  color: #2d2926;
+
+  width: 5rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
 
   background: none;
   border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
+.remove-btn {
+  color: red;
+}
+.edit-btn:hover,
+.edit-btn:focus,
 .remove-btn:hover,
 .remove-btn:focus {
-  color: #2d2926;
+  background-color: #fcf8ef;
 }
 
 /* Styling for the Counter*/
@@ -745,10 +767,6 @@ pre {
   height: auto;
 }
 
-.product-category {
-  text-align: center;
-  margin-bottom: 5rem;
-}
 .product-category h2 {
   font-size: 3.5rem;
   margin: 1rem;
@@ -756,7 +774,6 @@ pre {
 }
 .product-category p {
   font-size: 1rem;
-  margin-bottom: 7rem;
 }
 
 .product-row {
@@ -765,24 +782,6 @@ pre {
   gap: 2rem;
   max-width: 60rem;
   margin: 0 auto;
-}
-.product-image-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: #2d2926;
-}
-.product-image-link .image-icon {
-  width: 100%;
-  max-width: 10rem;
-  height: auto;
-  object-fit: contain;
-}
-.product-image-link h3 {
-  margin-top: 0.75rem;
-  font-size: 1.75rem;
 }
 
 /* 
