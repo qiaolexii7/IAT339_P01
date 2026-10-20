@@ -524,7 +524,7 @@ code {
   cursor: pointer;
 }
 .remove-btn {
-  color: red;
+  color: #d94f4f;
 }
 .edit-btn:hover,
 .edit-btn:focus,
@@ -643,6 +643,11 @@ This hides the deafult styling html have for input type="number" or else it has 
 
 .colour-gold {
   background-color: #c5850f;
+  color: white;
+}
+
+.colour-red {
+  background-color: #d94f4f;
   color: white;
 }
 
