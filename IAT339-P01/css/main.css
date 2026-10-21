@@ -68,19 +68,13 @@
 }
 
 .nav-image-link:hover .nav-image-default,
-.nav-image-link:focus .nav-image-default {
-  display: none;
-}
-
-.nav-image-link:hover .nav-image-hover,
-.nav-image-link:focus .nav-image-hover {
-  display: block;
-}
-
+.nav-image-link:focus .nav-image-default,
 .nav-image-link.current .nav-image-default {
   display: none;
 }
 
+.nav-image-link:hover .nav-image-hover,
+.nav-image-link:focus .nav-image-hover,
 .nav-image-link.current .nav-image-hover {
   display: block;
 }
