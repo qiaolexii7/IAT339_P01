@@ -209,6 +209,15 @@ code {
 .submit-reset-button button:focus {
   background-color: #2d2926;
 }
+.submit-reset-button button[type="reset"] {
+  color: #2d2926;
+  background-color: #ffd683;
+}
+.submit-reset-button button[type="reset"]:hover,
+.submit-reset-button button[type="reset"]:focus {
+  color: white;
+  background-color: #2d2926;
+}
 
 /* Primary action button */
 .primary-button {
@@ -886,12 +895,12 @@ pre {
 */
 .seasonal-offer-section {
   text-align: center;
-  padding: 2rem 1rem 3rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
 }
 .seasonal-offer-section h2 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   border-bottom: none;
 }
 .seasonal-offer-section p {
@@ -908,14 +917,14 @@ pre {
 
 .product-category h2 {
   text-align: center;
-  font-size: 3.5rem;
-  margin-top: 8rem;
+  font-size: 3.75rem;
   border-bottom: none;
+  margin-top: 8rem;
 }
 .product-category p {
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .product-row {
