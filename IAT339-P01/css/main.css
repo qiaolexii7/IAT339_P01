@@ -34,6 +34,7 @@
 
 .main-nav a {
   color: #83b6f1;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -44,11 +45,44 @@
 
 .main-nav a.current,
 .main-nav a.current:visited {
-  color: #83b6f1;
+  color: #2d2926;
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-thickness: 0.1rem;
-  text-underline-offset: 0.4rem;
+}
+
+.nav-logo {
+  width: 4rem;
+  height: auto;
+}
+
+.nav-cart-icon {
+  width: 1.65rem;
+  height: auto;
+}
+
+.nav-image-default {
+  display: block;
+}
+
+.nav-image-hover {
+  display: none;
+}
+
+.nav-image-link:hover .nav-image-default,
+.nav-image-link:focus .nav-image-default {
+  display: none;
+}
+
+.nav-image-link:hover .nav-image-hover,
+.nav-image-link:focus .nav-image-hover {
+  display: block;
+}
+
+.nav-image-link.current .nav-image-default {
+  display: none;
+}
+
+.nav-image-link.current .nav-image-hover {
+  display: block;
 }
 
 #combined_elements .main-nav {
@@ -519,7 +553,7 @@ code {
   padding: 0.5rem;
 
   background: none;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -531,6 +565,7 @@ code {
 .remove-btn:hover,
 .remove-btn:focus {
   background-color: #fcf8ef;
+  border-color: #d9d5d2;
 }
 
 /* Styling for the Counter*/
