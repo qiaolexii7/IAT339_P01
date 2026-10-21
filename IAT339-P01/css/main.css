@@ -384,7 +384,7 @@ code {
 */
 .checkout-form {
   max-width: 37rem;
-  margin: 0 auto;
+  margin: 0;
   padding: 1.5rem;
 
   background-color: white;
@@ -473,7 +473,7 @@ code {
 */
 .cart {
   max-width: 37rem;
-  margin: 0 auto;
+  margin: 0;
   padding: 1.5rem;
 
   background-color: white;
@@ -857,6 +857,10 @@ pre {
 /* 
   CART WEBPAGE STYLING
 */
+.checkout-layout .cart,
+.checkout-layout .checkout-form {
+  margin: 0 auto;
+}
 .checkout-layout .primary-button {
   display: block;
   box-sizing: border-box;
