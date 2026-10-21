@@ -119,6 +119,9 @@ h2 {
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid #2d2926;
 }
+#stylesheet-h2 {
+  border-bottom: none;
+}
 
 #interactive_elements h2 {
   margin-top: 0rem;
