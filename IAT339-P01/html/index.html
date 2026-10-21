@@ -210,7 +210,7 @@
         <h3 class="element-title">Headings</h3>
 
         <h4>CSS selector:</h4>
-        <p>.h1 .h2 .h3 .h4</p>
+        <p>h1 h2 h3 h4</p>
 
         <h4>Sample code:</h4>
         <pre><code>&lt;h1&gt;Heading I&lt;/h1&gt;
@@ -230,14 +230,14 @@
         <h3 class="element-title">Paragraphs</h3>
 
         <h4>CSS selector:</h4>
-        <p>.p</p>
+        <p>p</p>
 
         <h4>Sample code:</h4>
         <pre><code>&lt;p&gt;
 QQTea makes playful drinks with freshly brewed tea,
 fruit, milk, and chewy toppings! Every cup can be customized
 to match your perfect level of sweetness and ice.
-&lt;/p&gt;</pre></code>
+&lt;/p&gt;</code></pre>
 
   <h4>Rendered element:</h4>
 
@@ -289,20 +289,63 @@ to match your perfect level of sweetness and ice.
 
         <h4>Sample code:</h4>
         <pre><code>&lt;nav class="main-nav"&gt;
-  &lt;a class="nav-link" href="#home"&gt;Home&lt;/a&gt;
-  &lt;a class="nav-link" href="#menu"&gt;Menu&lt;/a&gt;
-  &lt;a class="nav-link" href="#contact"&gt;Contact Us&lt;/a&gt;
-  &lt;a class="nav-link" href="#cart"&gt;Cart&lt;/a&gt;
+  &lt;div class="nav-left"&gt;
+    &lt;a class="nav-image-link" href="#home"&gt;
+      &lt;img
+        class="nav-logo nav-image-default"
+        src="../image/qqtea-icon.svg"
+        alt="QQTea home"
+      /&gt;
+      &lt;img
+        class="nav-logo nav-image-hover"
+        src="../image/qqtea-icon-hover.svg"
+        alt=""
+      /&gt;
+    &lt;/a&gt;
+    &lt;a class="current" href="index.html"&gt;STYLE GUIDE&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="nav-right"&gt;
+    &lt;a class="nav-link" href="#about"&gt;ABOUT&lt;/a&gt;
+    &lt;a class="nav-link" href="../html/product-listing.html"&gt;MENU&lt;/a&gt;
+    &lt;a class="nav-link" href="#contact"&gt;CONTACT US&lt;/a&gt;
+    &lt;a class="nav-image-link" href="../html/cart.html"&gt;
+      &lt;img
+        class="nav-cart-icon nav-image-default"
+        src="../image/cart-icon.svg"
+        alt="Shopping cart"
+      /&gt;
+      &lt;img
+        class="nav-cart-icon nav-image-hover"
+        src="../image/cart-icon-hover.svg"
+        alt=""
+      /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
-
         <h4>Rendered element:</h4>
-
         <nav class="main-nav">
-          <a class="nav-link" href="#home">Home</a>
-          <a class="nav-link" href="#menu">Menu</a>
-          <a class="nav-link" href="#contact">Contact Us</a>
-          <a class="nav-link" href="#cart">Cart</a>
-        </nav>
+        <div class="nav-left">
+          <a class="nav-image-link" href="#home">
+            <img
+              class="nav-logo nav-image-default" src="../image/qqtea-icon.svg" alt="QQTea home">
+            <img
+              class="nav-logo nav-image-hover" src="../image/qqtea-icon-hover.svg" alt="">
+          </a>
+          <a class="current" href="index.html">STYLE GUIDE</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="nav-link" href="#about">ABOUT</a>
+          <a class="nav-link" href="../html/product-listing.html">MENU</a>
+          <a class="nav-link" href="#contact">CONTACT US</a>
+          <a class="nav-image-link" href="../html/cart.html">
+            <img
+              class="nav-cart-icon nav-image-default" src="../image/cart-icon.svg" alt="Shopping cart">
+            <img
+              class="nav-cart-icon nav-image-hover" src="../image/cart-icon-hover.svg" alt="">
+          </a>
+        </div>
+      </nav>
       </section>
 
       <section class="element">

@@ -209,6 +209,15 @@ code {
 .submit-reset-button button:focus {
   background-color: #2d2926;
 }
+.submit-reset-button button[type="reset"] {
+  color: #2d2926;
+  background-color: #ffd683;
+}
+.submit-reset-button button[type="reset"]:hover,
+.submit-reset-button button[type="reset"]:focus {
+  color: white;
+  background-color: #2d2926;
+}
 
 /* Primary action button */
 .primary-button {
