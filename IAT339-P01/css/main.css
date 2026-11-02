@@ -1065,3 +1065,72 @@ pre {
 .total-row h4 {
   font-size: 1.25rem;
 }
+
+/* 
+  PRODUCT DETAIL WEBPAGE STYLING
+*/
+.product-detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  margin-top: 6rem;
+  padding: 0 2rem 4rem;
+}
+
+.product-detail-image {
+  width: 10rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.product-detail-name {
+  font-family: "Nanum Pen", cursive;
+  font-size: 3.5rem;
+
+  margin: 0 0 0.5rem 0;
+}
+
+.product-detail-description {
+  max-width: 37rem;
+
+  font-size: 1.05rem;
+  line-height: 1.25;
+
+  margin: 0 0 3.5rem 0;
+}
+
+.product-detail-price {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+}
+
+.product-detail-button {
+  font-family: "LINE Seed JP", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+
+  min-width: 13rem;
+  padding: 0.65rem 1.5rem;
+
+  color: white;
+  background-color: #83b6f1;
+
+  border: none;
+  border-radius: 0.6rem;
+
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.product-detail-button:hover,
+.product-detail-button:focus {
+  background-color: #2d2926;
+}
