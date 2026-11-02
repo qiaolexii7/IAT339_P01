@@ -804,13 +804,11 @@ This hides the deafult styling html have for input type="number" or else it has 
   IMAGE DISPLAY
 */
 .imagery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  display: block;
 }
 
 .imagery-item {
-  flex: 1 1 24rem;
+  margin-bottom: 4rem;
 }
 
 .imagery-example {
@@ -826,7 +824,6 @@ This hides the deafult styling html have for input type="number" or else it has 
 }
 
 .imagery-decorations {
-  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
