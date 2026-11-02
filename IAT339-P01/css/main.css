@@ -88,17 +88,22 @@
   SHARED FOOTER STYLING
 */
 .site-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  background-color: #83b6f1;
   color: #fcf8ef;
+  background-color: #83b6f1;
+  padding: 3rem 2rem;
 
   margin-top: 10rem;
   margin-left: -2rem;
   margin-right: -2rem;
   margin-bottom: -2rem;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  align-items: start;
 }
 .footer-link,
 .footer-newsletter {
@@ -125,13 +130,14 @@
 }
 
 .newsletter-form input {
+  box-sizing: border-box;
   width: 14rem;
   padding: 0.5rem;
   font-family: "LINE Seed JP", sans-serif;
 
   border: none;
   border-radius: 0.5rem;
-  box-sizing: border-box;
+  margin-bottom: 0.5rem;
 }
 .newsletter-form button {
   font-family: "LINE Seed JP", sans-serif;
@@ -155,6 +161,12 @@
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+@media (max-width: 44rem) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*
@@ -967,7 +979,7 @@ pre {
 .seasonal-offer-section {
   text-align: center;
   padding: 2rem 1rem 3rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin-bottom: 4rem;
 }
 .seasonal-offer-section h2 {
