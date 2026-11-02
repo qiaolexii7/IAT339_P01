@@ -1174,6 +1174,8 @@ pre {
 }
 .contact-form textarea {
   min-height: 10rem;
+  /* Remove textarea resize icon */
+  resize: none;
 }
 .form-content {
   display: grid;
